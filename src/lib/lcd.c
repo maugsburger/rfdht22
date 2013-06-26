@@ -318,7 +318,7 @@ static inline void lcd_newline(uint8_t pos)
         addressCounter = LCD_START_LINE1;
 #endif
 #if LCD_LINES==4
-#if KS0073_4LINES_MODE
+#ifdef KS0073_4LINES_MODE
     if ( pos < LCD_START_LINE2 )
         addressCounter = LCD_START_LINE2;
     else if ( (pos >= LCD_START_LINE2) && (pos < LCD_START_LINE3) )
@@ -593,7 +593,7 @@ void lcd_init(uint8_t dispAttr)
     delay(64);                              /* wait 64us                    */
 #endif
 
-#if KS0073_4LINES_MODE
+#ifdef KS0073_4LINES_MODE
     /* Display with KS0073 controller requires special commands for enabling 4 line mode */
 	lcd_command(KS0073_EXTENDED_FUNCTION_REGISTER_ON);
 	lcd_command(KS0073_4LINES_MODE);
