@@ -16,7 +16,7 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
     uart_puts( "\n\r" );
 #endif
 
-#ifdef __AVR_ATtiny2313__
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__) 
     TCCR1B = _TCCR1BEDGE(1);
 
     TIFR = (1<<ICF1); // clear input capture flag, set after every interrupt handler
@@ -41,7 +41,7 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
     _delay_ms(100); 
     cli();
 
-#ifdef __AVR_ATtiny2313__
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__) 
     // disable timer1 clock
     TCCR1B = 0x00;
     TIMSK &= ~(1<<ICIE1); // enable input capture interrupt
