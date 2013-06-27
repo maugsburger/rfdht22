@@ -1,1 +1,4 @@
-// #define DHT22_UARTDEBUG
+/*
+#define DHT22_UARTDEBUG
+currently crashes :/
+*/

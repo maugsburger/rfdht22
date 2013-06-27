@@ -81,7 +81,7 @@ OBJDIR = .
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = $(TARGET).c
+SRC = $(TARGET).c ../lib/dht22.c ../lib/uart.c ../lib/spi.c ../lib/wl_module.c
 
 
 # List C++ source files here. (C dependencies are automatically generated.)
