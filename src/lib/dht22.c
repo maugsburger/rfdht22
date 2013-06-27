@@ -16,13 +16,15 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
     uart_puts( "\n\r" );
 #endif
 
+#ifdef __AVR_ATtiny2313__
     TCCR1B = _TCCR1BEDGE(1);
 
     TIFR = (1<<ICF1); // clear input capture flag, set after every interrupt handler
-    TIMSK = (1<<ICIE1); // enable input capture interrupt
-    sei(); // enable interrupts
+    TIMSK |= (1<<ICIE1); // enable input capture interrupt
+#else
+    #error not defined for this uc
+#endif
 
-    pintime_pos = 0;
 
     // start pulse 2ms
     PORTD &= ~(1<<PD6);
@@ -31,13 +33,21 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
     // pb0 high, input
     DDRD &= ~(1<<PD6);
 
+
+    sei(); // enable interrupts
+    pintime_pos = 0;
+
     // read data for 500ms
-    _delay_ms(500); 
+    _delay_ms(100); 
     cli();
 
+#ifdef __AVR_ATtiny2313__
     // disable timer1 clock
     TCCR1B = 0x00;
-    TIMSK = 0; // input capture interrupt
+    TIMSK &= ~(1<<ICIE1); // enable input capture interrupt
+#else
+    #error not defined for this uc
+#endif
 
     // measure complete
     uint8_t dht22data[6] = {0,0,0,0,0,0};
@@ -76,7 +86,7 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
 #endif
         return 0;
     } else {
-#ifdef DHT22_UARTDEBUG2
+#ifdef DHT22_UARTDEBUG
         uart_puts("incorrect data\r\n");
         for (int i = 0; i < PINTIME_SIZE; i++) {
             uart_puts( utoa(pintime[i], s, 10) );
