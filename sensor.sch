@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8169,12 +8169,6 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 </net>
 <net name="PB0" class="0">
 <segment>
-<pinref part="NRF24L01" gate="G$1" pin="6"/>
-<wire x1="116.84" y1="140.97" x2="118.11" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="140.97" x2="102.87" y2="140.97" width="0.1524" layer="91"/>
-<label x="111.76" y="140.97" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="66.04" y1="133.35" x2="67.31" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="4"/>
 <wire x1="58.42" y1="133.35" x2="66.04" y2="133.35" width="0.1524" layer="91"/>
@@ -8184,14 +8178,14 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 <wire x1="64.77" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="116.84" x2="67.31" y2="115.57" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="PB1" class="0">
 <segment>
 <pinref part="NRF24L01" gate="G$1" pin="3"/>
 <wire x1="87.63" y1="138.43" x2="73.66" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="138.43" x2="72.39" y2="137.16" width="0.1524" layer="91"/>
 <label x="73.66" y="138.43" size="1.778" layer="95"/>
+<wire x1="72.39" y1="137.16" x2="73.66" y2="138.43" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="PB1" class="0">
 <segment>
 <pinref part="ISP" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="135.89" x2="38.1" y2="135.89" width="0.1524" layer="91"/>
@@ -8201,6 +8195,12 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 <pinref part="IC1" gate="G$1" pin="(MISO/DO/OC1A)PB1"/>
 <wire x1="64.77" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="114.3" x2="67.31" y2="113.03" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="NRF24L01" gate="G$1" pin="6"/>
+<wire x1="116.84" y1="140.97" x2="102.87" y2="140.97" width="0.1524" layer="91"/>
+<label x="111.76" y="140.97" size="1.778" layer="95"/>
+<wire x1="118.11" y1="139.7" x2="116.84" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB2" class="0">
