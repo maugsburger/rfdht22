@@ -29,14 +29,67 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__)
+#define PORT_USI    PORTB
+#define DDR_USI     DDRB
+#define DD_DO       DDB6 // MOSI
+#define DD_DI       DDB5 // MISO
+#define DD_SCK      DDB7
+#else
 #define PORT_SPI    PORTB
 #define DDR_SPI     DDRB
 #define DD_MISO     DDB4
 #define DD_MOSI     DDB3
 #define DD_SCK      DDB5
+#endif
 
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__)
+// Initialize pins for spi communication
+void spi_init() {
+    DDR_USI &= ~(1<<DD_DI);
+    // Define the following pins as output
+    DDR_USI |= ((1<<DD_DO)|(1<<DD_SCK));
+    // Pullup on DI
+    PORT_USI |= (1<<DDB5);
+}
 
-void spi_init()
+// Shift full array through target device
+void spi_transfer_sync (uint8_t *dataout, uint8_t *datain, uint8_t len) {
+       uint8_t i;      
+       for (i = 0; i < len; i++) {
+            USIDR = dataout[i];
+            USISR = (1<<USIOIF);
+            while ( (USISR & (1<<USIOIF)) == 0 ) {
+                    USICR = (1<<USIWM0)|(1<<USICS1)|(1<<USICLK)|(1<<USITC);
+            }
+            datain[i] = USIDR;
+       }
+}
+
+// Shift full array to target device without receiving any byte
+void spi_transmit_sync (uint8_t *dataout, uint8_t len) {
+       uint8_t i;      
+       for (i = 0; i < len; i++) {
+            USIDR = dataout[i];
+            USISR = (1<<USIOIF);
+            while ( (USISR & (1<<USIOIF)) == 0 ) {
+                    USICR = (1<<USIWM0)|(1<<USICS1)|(1<<USICLK)|(1<<USITC);
+            }
+       }
+}
+
+// Clocks only one byte to target device and returns the received one
+uint8_t spi_fast_shift (uint8_t data) {
+    USIDR = data;
+
+    USISR = (1<<USIOIF);
+    while ( (USISR & (1<<USIOIF)) == 0 ) {
+            USICR = (1<<USIWM0)|(1<<USICS1)|(1<<USICLK)|(1<<USITC);
+    }
+
+    return USIDR;
+}
+#else
 // Initialize pins for spi communication
 void spi_init() {
     DDR_SPI &= ~(1<<DD_MISO);
