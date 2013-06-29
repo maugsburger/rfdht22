@@ -50,23 +50,19 @@ void wl_module_init()
     wl_module_CE_lo;
     wl_module_CSN_hi;
 
-#if defined(__AVR_ATmega8__)
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__)
     // Initialize external interrupt 0 (PD2)
-    MCUCR = ((1<<ISC11)|(0<<ISC10)|(1<<ISC01)|(0<<ISC00));	// Set external interupt on falling edge
-    GICR  = ((0<<INT1)|(1<<INT0));							// Activate INT0
-#endif // __AVR_ATmega8__
-
-#if defined(__AVR_ATmega88A__)
+    MCUCR |= (1<<ISC01);
+    MCUCR &= ~(0<<ISC00);	// Set external interupt on falling edge
+    GIMSK |= (1<<INT0);		// Activate INT0
+    DDRD &= ~(1<<PD2);      // Interrupt Input PIN
+#elif defined(__AVR_ATmega88A__)
 	EICRA = ((1<<ISC11)|(0<<ISC10)|(1<<ISC01)|(0<<ISC00));	// Set external interupt on falling edge for INT0 and INT1
 	EIMSK  = ((0<<INT1)|(1<<INT0));							// Activate INT0
-#endif // __AVR_ATmega88A__
 
-#if defined(__AVR_ATmega168__)
-    // Initialize external interrupt on port PD6 (PCINT22)
-    DDRB &= ~(1<<PD6);
-    PCMSK2 = (1<<PCINT22);
-    PCICR  = (1<<PCIE2);
-#endif // __AVR_ATmega168__    
+#else
+    #warning interrupt config not available
+#endif // __AVR_ATmega88A__
 
     // Initialize spi module
     spi_init();
