@@ -1,29 +1,29 @@
 /*
-	Copyright (c) 2011 by Ernst Buchmann 
+	Copyright (c) 2011 by Ernst Buchmann
 	
 	Code based on the work of Stefan Engelke and Brennan Ball
 	
-    Permission is hereby granted, free of charge, to any person 
-    obtaining a copy of this software and associated documentation 
-    files (the "Software"), to deal in the Software without 
-    restriction, including without limitation the rights to use, copy, 
-    modify, merge, publish, distribute, sublicense, and/or sell copies 
-    of the Software, and to permit persons to whom the Software is 
+    Permission is hereby granted, free of charge, to any person
+    obtaining a copy of this software and associated documentation
+    files (the "Software"), to deal in the Software without
+    restriction, including without limitation the rights to use, copy,
+    modify, merge, publish, distribute, sublicense, and/or sell copies
+    of the Software, and to permit persons to whom the Software is
     furnished to do so, subject to the following conditions:
 
-    The above copyright notice and this permission notice shall be 
+    The above copyright notice and this permission notice shall be
     included in all copies or substantial portions of the Software.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
-    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
-    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
     DEALINGS IN THE SOFTWARE.
 
-    
+
 */
 
 #include "wl_module.h"
@@ -41,7 +41,7 @@
 // Flag which denotes transmitting mode
 volatile uint8_t PTX;
 
-void wl_module_init() 
+void wl_module_init()
 // Initializes pins and interrupt to communicate with the wl_module
 // Should be called in the early initializing phase at startup.
 {
@@ -69,7 +69,7 @@ void wl_module_init()
 }
 
 
-void wl_module_config() 
+void wl_module_config()
 // Sets the important registers in the wl-module and powers the module
 // in receiving mode
 {
@@ -77,16 +77,16 @@ void wl_module_config()
     wl_module_config_register(RF_CH,wl_module_CH);
 	// Set data speed & Output Power configured in wl_module.h
 	wl_module_config_register(RF_SETUP,wl_module_RF_SETUP);
-	// Set length of incoming payload 
+	// Set length of incoming payload
     wl_module_config_register(RX_PW_P0, wl_module_PAYLOAD);
 	
-    // Start receiver 
+    // Start receiver
     PTX = 0;        // Start in receiving mode
     RX_POWERUP;     // Power up in receiving mode
     wl_module_CE_hi;     // Listening for pakets
 }
 
-extern void wl_module_rx_config() 
+extern void wl_module_rx_config()
 // Sets the important registers in the wl-module and powers the module
 // in receiving mode
 {
@@ -112,7 +112,7 @@ extern void wl_module_rx_config()
 	wl_module_set_rx_addr(data, 1, 4);
 	data[0]=RX_ADDR_P5_DEFAULT_VAL;
 	wl_module_set_rx_addr(data, 1, 5);
-    // Set length of incoming payload 
+    // Set length of incoming payload
     wl_module_config_register(RX_PW_P0, wl_module_PAYLOAD);
 	wl_module_config_register(RX_PW_P1, wl_module_PAYLOAD);
 	wl_module_config_register(RX_PW_P2, wl_module_PAYLOAD);
@@ -121,17 +121,17 @@ extern void wl_module_rx_config()
 	wl_module_config_register(RX_PW_P5, wl_module_PAYLOAD);
 	
 	
-    // Start receiver 
+    // Start receiver
     PTX = 0;        // Start in receiving mode
     RX_POWERUP;     // Power up in receiving mode
     wl_module_CE_hi;     // Listening for pakets
 }
 
-// Sets the wl-module as one of the six sender. Define for every sender a unique Number (wl_module_TX_NR_x) 
+// Sets the wl-module as one of the six sender. Define for every sender a unique Number (wl_module_TX_NR_x)
 // when you call this Function.
 //  Each TX will get a TX-Address corresponding to the RX-Device.
 // RX_Address_Pipe_0 must be the same as the TX-Address
-extern void wl_module_tx_config(uint8_t tx_nr) 
+extern void wl_module_tx_config(uint8_t tx_nr)
 {
 	uint8_t tx_addr[5];
 	
@@ -141,7 +141,7 @@ extern void wl_module_tx_config(uint8_t tx_nr)
 	wl_module_config_register(RF_SETUP,wl_module_RF_SETUP);
 	//Config the CONFIG Register (Mask IRQ, CRC, etc)
 	wl_module_config_register(CONFIG, wl_module_CONFIG);
-    // Set length of incoming payload 
+    // Set length of incoming payload
     //wl_module_config_register(RX_PW_P0, wl_module_PAYLOAD);
 	
 	wl_module_config_register(SETUP_RETR,(SETUP_RETR_ARD_750 | SETUP_RETR_ARC_15));
@@ -188,7 +188,7 @@ extern void wl_module_tx_config(uint8_t tx_nr)
 	PTX =0;
 	TX_POWERUP;
 	/*
-    // Start receiver 
+    // Start receiver
     PTX = 0;        // Start in receiving mode
     RX_POWERUP;     // Power up in receiving mode
     wl_module_CE_hi;     // Listening for pakets
@@ -208,7 +208,7 @@ extern void wl_module_set_tx_addr(uint8_t * address, uint8_t len)
 //sets up the 24L01 as a transmitter
 //this function takes the existing contents of the CONFIG register and simply
 //  clears the PRIM_RX bit in the CONFIG register.
-//note: if the read value of the CONFIG register already has the PRIM_RX bit cleared, this 
+//note: if the read value of the CONFIG register already has the PRIM_RX bit cleared, this
 //  function exits in order to not make an unecessary register write.
 extern void wl_module_set_as_tx()
 {
@@ -229,7 +229,7 @@ extern void wl_module_set_as_tx()
 //powers down the 24L01
 //this function takes the existing contents of the CONFIG register and simply
 //  clears the PWR_UP bit in the CONFIG register.
-//note: if the read value of the CONFIG register already has the PWR_UP bit cleared, this 
+//note: if the read value of the CONFIG register already has the PWR_UP bit cleared, this
 //  function exits in order to not make an unecessary register write.
 extern void wl_module_power_down()
 {
@@ -316,7 +316,7 @@ extern uint8_t wl_module_get_rx_pipe_from_status(uint8_t status)
 	return ((status & 0xE) >> 1);
 }
 
-void wl_module_set_RADDR(uint8_t * adr) 
+void wl_module_set_RADDR(uint8_t * adr)
 // Sets the receiving address
 {
     wl_module_CE_lo;
@@ -332,12 +332,12 @@ void wl_module_set_TADDR(uint8_t * adr)
 
 
 
-extern uint8_t wl_module_data_ready() 
+extern uint8_t wl_module_data_ready()
 // Checks if data is available for reading
 {
     if (PTX) return 0;
     uint8_t status;
-    // Read wl_module status 
+    // Read wl_module status
     wl_module_CSN_lo;                                // Pull down chip select
     status = spi_fast_shift(NOP);               // Read status register
     wl_module_CSN_hi;                                // Pull up chip select
@@ -430,7 +430,7 @@ return status;
 
 }
 
-extern uint8_t wl_module_get_data(uint8_t * data) 
+extern uint8_t wl_module_get_data(uint8_t * data)
 // Reads wl_module_PAYLOAD bytes into data array
 {
 	uint8_t status;
@@ -460,7 +460,7 @@ void wl_module_read_register(uint8_t reg, uint8_t * value, uint8_t len)
     wl_module_CSN_hi;
 }
 
-void wl_module_write_register(uint8_t reg, uint8_t * value, uint8_t len) 
+void wl_module_write_register(uint8_t reg, uint8_t * value, uint8_t len)
 // Writes an array of bytes into inte the wl-module registers.
 {
     wl_module_CSN_lo;
@@ -470,7 +470,7 @@ void wl_module_write_register(uint8_t reg, uint8_t * value, uint8_t len)
 }
 
 
-void wl_module_send(uint8_t * value, uint8_t len) 
+void wl_module_send(uint8_t * value, uint8_t len)
 // Sends a data package to the default address. Be sure to send the correct
 // amount of bytes as configured as payload on the receiver.
 {
@@ -480,16 +480,16 @@ void wl_module_send(uint8_t * value, uint8_t len)
 
     PTX = 1;                        // Set to transmitter mode
     TX_POWERUP;                     // Power up
-    
+
     wl_module_CSN_lo;                    // Pull down chip select
     spi_fast_shift( FLUSH_TX );     // Write cmd to flush tx fifo
     wl_module_CSN_hi;                    // Pull up chip select
-    
+
     wl_module_CSN_lo;                    // Pull down chip select
     spi_fast_shift( W_TX_PAYLOAD ); // Write cmd to write payload
     spi_transmit_sync(value,len);   // Write payload
     wl_module_CSN_hi;                    // Pull up chip select
-    
+
     wl_module_CE_hi;                     // Start transmission
 	_delay_us(10);						// Grünes Modul funktioniert nicht mit 10µs delay
 	wl_module_CE_lo;
