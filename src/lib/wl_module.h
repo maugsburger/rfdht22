@@ -30,6 +30,7 @@
 #define _WL_MODULE_H_
 
 #include <avr/io.h>
+#include <wl_config.h>
 
 //Externe Variable deklarieren
 extern volatile uint8_t PTX;
@@ -46,10 +47,6 @@ extern volatile uint8_t PTX;
 #define wl_module_TX_NR_3		3
 #define wl_module_TX_NR_4		4
 #define wl_module_TX_NR_5		5
-
-// Pin definitions for chip select and chip enabled of the wl-module
-#define CE  PB0
-#define CSN PB1
 
 // Definitions for selecting and enabling wl_module module
 #define wl_module_CSN_hi     PORTB |=  (1<<CSN);
