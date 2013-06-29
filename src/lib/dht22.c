@@ -8,6 +8,15 @@
 static volatile uint8_t pintime[PINTIME_SIZE];
 static volatile uint8_t pintime_pos = 0;
 
+void dhtinit() {
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__)
+    DDRD &= ~(1<<PD6); //PD6 is ICP1
+#else
+    #error not defined for this uc
+#endif
+}
+
+
 int dhtmeasure(uint16_t *temp, uint16_t *hum) {
 
 #ifdef DHT22_UARTDEBUG
@@ -16,7 +25,7 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
     uart_puts( "\n\r" );
 #endif
 
-#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__) 
+#if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__)
     TCCR1B = _TCCR1BEDGE(1);
 
     TIFR = (1<<ICF1); // clear input capture flag, set after every interrupt handler
