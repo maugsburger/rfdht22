@@ -33,18 +33,16 @@
 #define DDR_SPI     DDRB
 #define DD_MISO     DDB4
 #define DD_MOSI     DDB3
-#define DD_SS       DDB2
 #define DD_SCK      DDB5
 
 
 void spi_init()
 // Initialize pins for spi communication
-{
-    DDR_SPI &= ~((1<<DD_MOSI)|(1<<DD_MISO)|(1<<DD_SS)|(1<<DD_SCK));
+void spi_init() {
+    DDR_SPI &= ~(1<<DD_MISO);
     // Define the following pins as output
-    DDR_SPI |= ((1<<DD_MOSI)|(1<<DD_SS)|(1<<DD_SCK));
+    DDR_SPI |= ((1<<DD_MOSI)|(1<<DD_SCK));
 
-    
     SPCR = ((1<<SPE)|               // SPI Enable
             (0<<SPIE)|              // SPI Interupt Enable
             (0<<DORD)|              // Data Order (0:MSB first / 1:LSB first)
@@ -57,9 +55,8 @@ void spi_init()
     
 }
 
-void spi_transfer_sync (uint8_t * dataout, uint8_t * datain, uint8_t len)
 // Shift full array through target device
-{
+void spi_transfer_sync (uint8_t *dataout, uint8_t *datain, uint8_t len) {
        uint8_t i;      
        for (i = 0; i < len; i++) {
              SPDR = dataout[i];
@@ -68,9 +65,8 @@ void spi_transfer_sync (uint8_t * dataout, uint8_t * datain, uint8_t len)
        }
 }
 
-void spi_transmit_sync (uint8_t * dataout, uint8_t len)
 // Shift full array to target device without receiving any byte
-{
+void spi_transmit_sync (uint8_t *dataout, uint8_t len) {
        uint8_t i;      
        for (i = 0; i < len; i++) {
              SPDR = dataout[i];
@@ -78,11 +74,10 @@ void spi_transmit_sync (uint8_t * dataout, uint8_t len)
        }
 }
 
-uint8_t spi_fast_shift (uint8_t data)
 // Clocks only one byte to target device and returns the received one
-{
+uint8_t spi_fast_shift (uint8_t data) {
     SPDR = data;
     while((SPSR & (1<<SPIF))==0);
     return SPDR;
 }
-
+#endif
