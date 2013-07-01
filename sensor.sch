@@ -7914,6 +7914,9 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="DINA5_P" device=""/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="0207/7" value="4k7"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="0207/7" value="4k7"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="4k7"/>
 </parts>
 <sheets>
 <sheet>
@@ -7985,6 +7988,9 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 <instance part="GND6" gate="1" x="93.98" y="68.58"/>
 <instance part="GND8" gate="1" x="31.75" y="46.99"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="R5" gate="G$1" x="81.28" y="140.97"/>
+<instance part="R6" gate="G$1" x="81.28" y="138.43"/>
+<instance part="R7" gate="G$1" x="109.22" y="140.97"/>
 </instances>
 <busses>
 <bus name="IO:PA[0..7],PB[0..7]">
@@ -8179,10 +8185,10 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 <wire x1="66.04" y1="116.84" x2="67.31" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="NRF24L01" gate="G$1" pin="3"/>
-<wire x1="87.63" y1="138.43" x2="73.66" y2="138.43" width="0.1524" layer="91"/>
 <label x="73.66" y="138.43" size="1.778" layer="95"/>
 <wire x1="72.39" y1="137.16" x2="73.66" y2="138.43" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="138.43" x2="76.2" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -8197,18 +8203,18 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 <wire x1="66.04" y1="114.3" x2="67.31" y2="113.03" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="NRF24L01" gate="G$1" pin="6"/>
-<wire x1="116.84" y1="140.97" x2="102.87" y2="140.97" width="0.1524" layer="91"/>
 <label x="111.76" y="140.97" size="1.778" layer="95"/>
 <wire x1="118.11" y1="139.7" x2="116.84" y2="140.97" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="140.97" x2="114.3" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB2" class="0">
 <segment>
-<pinref part="NRF24L01" gate="G$1" pin="5"/>
-<wire x1="73.66" y1="140.97" x2="87.63" y2="140.97" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="140.97" x2="72.39" y2="139.7" width="0.1524" layer="91"/>
 <label x="73.66" y="140.97" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="140.97" x2="76.2" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ISP" gate="G$1" pin="3"/>
@@ -8345,6 +8351,27 @@ Treiber http://de.farnell.com/nxp/pcf2112ct-1/lcd-treiber-32seg-40vsop/dp/206616
 <pinref part="D1" gate="G$1" pin="A1"/>
 <wire x1="92.71" y1="118.11" x2="92.71" y2="114.3" width="0.1524" layer="91"/>
 <label x="73.66" y="118.11" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="NRF24L01" gate="G$1" pin="5"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="87.63" y1="140.97" x2="86.36" y2="140.97" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="NRF24L01" gate="G$1" pin="3"/>
+<wire x1="86.36" y1="138.43" x2="87.63" y2="138.43" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="NRF24L01" gate="G$1" pin="6"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="102.87" y1="140.97" x2="104.14" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
