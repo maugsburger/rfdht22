@@ -1,7 +1,7 @@
 rfdht22
 =======
 
-rf temp/hum sensor, based on DHT22 and NRF24L01, glued together by attiny261
+rf temp/hum sensor, based on DHT22 and NRF24L01p, glued together by attiny2313a
 
 possible improvements
 ---------------------
