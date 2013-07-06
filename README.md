@@ -1,12 +1,28 @@
 rfdht22
 =======
 
-rf temp/hum sensor, based on DHT22 and NRF24L01p, glued together by attiny2313a
+RF temp/hum sensor, grown from a DHT22 and NRF24L01p based sensor to something bigger.
+
+Originally, I just wanted to monitor humidity and temperature in all rooms of my flat, submit them wireless to a master where you can read them out and get some other fancy features (eg close all windows, now it's warmer on the outside than inside).
+
+sensor
+------
+
+With every step of hardware design, it grew a little bit bigger, so there are now two different version
+
+- either a small headless version with dht22 and what else will fit on the board and µc, as cheap as possible (single sided, attiny)
+
+- or a big version with lcd, twi/i2c, one-wire, quad direct analogue and quad opamp driven analogue in
+
+One design goal was to make the sensors as power saving as possible, so they will hopefully run multiple years on a pair of AA cells. No wires, no problem with WAF.
+
+master
+------
+
+Power doesn't matter here, big ass display (currently only 4x20 character LCD), can show values of all sensors, and a lot of planned features still in my head.
 
 possible improvements
 ---------------------
 
- - use ATMega 169PA or other with integrated LCD driver to reduce power even more (needs usefull lcd glass like 6x11-segment)
- - optional layouts with/out LCD or other components (dht22 is happy with charge pump)
  - lan interface for master
  - hack some radiator controller to enable remote control
