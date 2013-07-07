@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -72,9 +72,30 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="196" name="aValue" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -2186,36 +2207,6 @@ Abstand zwischen Domen 7mm
 </package>
 </packages>
 </library>
-<library name="xmaker">
-<description>&lt;b&gt;XLibrary - eXtream MAKER's Eagle Library&lt;/b&gt;
-&lt;br&gt;
-Presented by http://xmaker.mx/&lt;br&gt;
-Version 0.4
-&lt;p&gt;
-&lt;b&gt;Licensing: CC v3.0 Attribution-Share Alike&lt;/b&gt;&lt;br&gt;http://creativecommons.org/licenses/by-sa/3.0/
-&lt;/p&gt;
-&lt;p&gt;
-Some packages are copied from SFE Footprint Library Eagle (http://www.opencircuits.com/SFE_Footprint_Library_Eagle)
-&lt;/p&gt;</description>
-<packages>
-<package name="SOT23-3">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="27">&gt;VALUE</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="25">&gt;NAME</text>
-</package>
-</packages>
-</library>
 <library name="microchip">
 <packages>
 <package name="SOP65P640X120-14N">
@@ -2471,29 +2462,23 @@ Some packages are copied from SFE Footprint Library Eagle (http://www.opencircui
 </package>
 </packages>
 </library>
-<library name="transistor-power">
-<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<library name="mosfet">
 <packages>
 <package name="MICRO3">
 <description>&lt;b&gt;Micro3 TM Package Outline&lt;/b&gt;&lt;p&gt;
 www.irf.com / irlml5203.pdf</description>
-<wire x1="-1.45" y1="0.65" x2="-0.6" y2="0.65" width="0.1016" layer="21"/>
-<wire x1="-0.6" y1="0.65" x2="0.6" y2="0.65" width="0.1016" layer="51"/>
-<wire x1="0.6" y1="0.65" x2="1.45" y2="0.65" width="0.1016" layer="21"/>
-<wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.1016" layer="21"/>
-<wire x1="1.45" y1="-0.65" x2="0.35" y2="-0.65" width="0.1016" layer="51"/>
-<wire x1="0.35" y1="-0.65" x2="-0.35" y2="-0.65" width="0.1016" layer="21"/>
-<wire x1="-0.35" y1="-0.65" x2="-1.45" y2="-0.65" width="0.1016" layer="51"/>
-<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.1016" layer="21"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-1.6" y="1.6" size="1.778" layer="25">&gt;NAME</text>
-<text x="-1.5" y="-3.4" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.27" y1="0.66" x2="0.27" y2="1.25" layer="51"/>
-<rectangle x1="-1.22" y1="-1.25" x2="-0.68" y2="-0.65" layer="51"/>
-<rectangle x1="0.68" y1="-1.25" x2="1.22" y2="-0.64" layer="51"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 </packages>
 </library>
@@ -2734,12 +2719,12 @@ www.irf.com / irlml5203.pdf</description>
 </element>
 <element name="R9" library="rcl" package="R0603" value="470k" x="43.145" y="29.46" rot="MR180"/>
 <element name="R10" library="rcl" package="R0603" value="270k" x="46.745" y="29.46" rot="MR0"/>
-<element name="Q1" library="xmaker" package="SOT23-3" value="IRLML2502" x="4.19" y="25.86" rot="MR0"/>
+<element name="Q1" library="mosfet" package="MICRO3" value="IRLML2502" x="4.19" y="25.86" rot="MR0"/>
 <element name="JP1" library="pinhead-mod" package="1X02" value="I2C" x="46.99" y="39.37" rot="MR180"/>
 <element name="JP2" library="pinhead-mod" package="1X03" value="1-Wire" x="50.8" y="33.02" rot="MR180"/>
 <element name="R8" library="rcl" package="R0603" value="4k7" x="30.8" y="16.8" rot="MR0"/>
 <element name="R11" library="rcl" package="R0603" value="4k7" x="30.8" y="18.8" rot="MR0"/>
-<element name="Q2" library="xmaker" package="SOT23-3" value="IRLML2502" x="38.93" y="28.235" rot="MR0"/>
+<element name="Q2" library="mosfet" package="MICRO3" value="IRLML2502" x="38.93" y="28.235" rot="MR0"/>
 <element name="R12" library="rcl" package="R0603" value="4k7" x="30.8" y="20.8" rot="MR180"/>
 <element name="JP3" library="pinhead-mod" package="1X04" value="serial" x="38.1" y="39.37" rot="MR180"/>
 <element name="S2" library="switch-tact" package="DTS-6" value="DTS-6" x="33.2" y="5.6" locked="yes"/>
@@ -2763,7 +2748,7 @@ www.irf.com / irlml5203.pdf</description>
 <element name="R21" library="rcl" package="R0201" value="0" x="13.6" y="17.2" rot="MR270"/>
 <element name="R23" library="rcl" package="R0201" value="0" x="13.6" y="21.2" rot="MR90"/>
 <element name="R24" library="rcl" package="R0201" value="0" x="8" y="21.2" rot="MR90"/>
-<element name="Q3" library="transistor-power" package="MICRO3" value="IRLML6402" x="10.8" y="10" rot="MR0"/>
+<element name="Q3" library="mosfet" package="MICRO3" value="IRLML6402" x="10.8" y="10" rot="MR0"/>
 <element name="JP4" library="pinhead-mod" package="1X06" value="ADC1" x="17.145" y="22.86" locked="yes" rot="MR90"/>
 <element name="JP5" library="pinhead-mod" package="1X06" value="ADC2" x="15.2" y="39.2" rot="MR180"/>
 </elements>
@@ -2884,7 +2869,7 @@ www.irf.com / irlml5203.pdf</description>
 <wire x1="37.2" y1="20.4" x2="32.8" y2="24.8" width="0.254" layer="1"/>
 <wire x1="32" y1="25.6" x2="30.8" y2="26.8" width="0.254" layer="1"/>
 <wire x1="11.81" y1="28.4" x2="11.81" y2="30.04" width="0.254" layer="16"/>
-<wire x1="9.85" y1="8.4" x2="9.85" y2="9" width="0.254" layer="16"/>
+<wire x1="9.85" y1="8.4" x2="9.85" y2="8.9" width="0.254" layer="16"/>
 <wire x1="6.05" y1="30.4" x2="6.05" y2="30.85" width="0.254" layer="16"/>
 <wire x1="6.05" y1="30.85" x2="6.546" y2="31.346" width="0.254" layer="16"/>
 <wire x1="6.546" y1="31.346" x2="11.054" y2="31.346" width="0.254" layer="16"/>
@@ -3367,7 +3352,7 @@ www.irf.com / irlml5203.pdf</description>
 <via x="37.6" y="26" extent="1-16" drill="0.4"/>
 <wire x1="37.6" y1="26" x2="39.6" y2="26" width="0.254" layer="16"/>
 <wire x1="39.6" y1="26" x2="39.88" y2="26.28" width="0.254" layer="16"/>
-<wire x1="39.88" y1="26.28" x2="39.88" y2="27.235" width="0.254" layer="16"/>
+<wire x1="39.88" y1="26.28" x2="39.88" y2="27.135" width="0.254" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="Q2" pad="3"/>
@@ -3606,10 +3591,10 @@ www.irf.com / irlml5203.pdf</description>
 <via x="10.8" y="18" extent="1-16" drill="0.4"/>
 <wire x1="10.8" y1="18" x2="9.6" y2="19.2" width="0.254" layer="1"/>
 <wire x1="9.6" y1="19.2" x2="9.95" y2="19.2" width="0.254" layer="1"/>
-<wire x1="10.8" y1="16.3806" x2="10.8" y2="11" width="0.254" layer="16"/>
+<wire x1="10.8" y1="16.3806" x2="10.8" y2="11.1" width="0.254" layer="16"/>
 <wire x1="17.145" y1="13.945" x2="14" y2="10.8" width="0.254" layer="16"/>
 <wire x1="14" y1="10.8" x2="11" y2="10.8" width="0.254" layer="16"/>
-<wire x1="11" y1="10.8" x2="10.8" y2="11" width="0.254" layer="16"/>
+<wire x1="11" y1="10.8" x2="10.8" y2="11.1" width="0.254" layer="16"/>
 <wire x1="8" y1="33.2" x2="8" y2="27.6" width="0.254" layer="1"/>
 <wire x1="8" y1="27.6" x2="7.2" y2="26.8" width="0.254" layer="1"/>
 <wire x1="7.2" y1="26.8" x2="7.2" y2="19.6" width="0.254" layer="1"/>
@@ -3639,7 +3624,7 @@ www.irf.com / irlml5203.pdf</description>
 <wire x1="26.8" y1="12" x2="16.4" y2="12" width="0.254" layer="1"/>
 <via x="16.4" y="12" extent="1-16" drill="0.4"/>
 <wire x1="16.4" y1="12" x2="13.4" y2="9" width="0.254" layer="16"/>
-<wire x1="13.4" y1="9" x2="11.75" y2="9" width="0.254" layer="16"/>
+<wire x1="13.4" y1="9" x2="11.75" y2="8.9" width="0.254" layer="16"/>
 <contactref element="IC3" pad="4"/>
 <wire x1="27.6" y1="12.8" x2="27.6" y2="15.05" width="0.254" layer="1"/>
 </signal>
@@ -3656,7 +3641,7 @@ www.irf.com / irlml5203.pdf</description>
 <wire x1="2.8" y1="30.8" x2="2.8" y2="26.8" width="0.254" layer="16"/>
 <wire x1="2.8" y1="26.8" x2="3.6" y2="26" width="0.254" layer="16"/>
 <wire x1="3.6" y1="26" x2="4" y2="26" width="0.254" layer="16"/>
-<wire x1="4" y1="26" x2="5.14" y2="24.86" width="0.254" layer="16"/>
+<wire x1="4" y1="26" x2="5.14" y2="24.76" width="0.254" layer="16"/>
 </signal>
 <signal name="LED1">
 <contactref element="LED1" pad="K"/>
@@ -3697,147 +3682,6 @@ www.irf.com / irlml5203.pdf</description>
 <wire x1="42" y1="6.4" x2="39.2" y2="6.4" width="0.254" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="7,40,acce415dcde45109"/>
-<approved hash="7,40,acce00103a3a811e"/>
-<approved hash="7,40,8575001028fd871e"/>
-<approved hash="7,40,4e4e7a218a985118"/>
-<approved hash="7,40,d2630d655efe6495"/>
-<approved hash="7,40,857500101381871e"/>
-<approved hash="7,40,4e4e415db1e45118"/>
-<approved hash="7,40,d2630d6565826495"/>
-<approved hash="7,40,acce7a21f6985109"/>
-<approved hash="7,40,acce00100146811e"/>
-<approved hash="7,40,227224dc4c399286"/>
-<approved hash="7,40,227224dc77459286"/>
-<approved hash="7,40,edce7a302909ef89"/>
-<approved hash="7,40,edce414c1275ef89"/>
-<approved hash="7,40,bcce7a355e8cc909"/>
-<approved hash="7,40,8575001038e92f1e"/>
-<approved hash="7,40,bcce00103a2e291e"/>
-<approved hash="7,40,bcce414965f0c909"/>
-<approved hash="7,40,bcce00100152291e"/>
-<approved hash="7,40,5e4e7a35128cc97b"/>
-<approved hash="7,40,427224dc67326a86"/>
-<approved hash="7,40,5e4e414929f0c97b"/>
-<approved hash="7,40,8575001003952f1e"/>
-<approved hash="7,40,a2631d6565f58c95"/>
-<approved hash="7,40,a2631d655e898c95"/>
-<approved hash="7,40,427224dc5c4e6a86"/>
-<approved hash="7,40,fdce413b8a026789"/>
-<approved hash="7,40,fdce7a47b17e6789"/>
-<approved hash="7,40,ccfe00300d02051e"/>
-<approved hash="7,40,ccfe56552edce509"/>
-<approved hash="7,40,6e4e60315c88e51b"/>
-<approved hash="7,40,a575001052ed031e"/>
-<approved hash="7,40,da6315658ced6095"/>
-<approved hash="7,40,ccce00103b56051e"/>
-<approved hash="7,40,ca72ecdc75567686"/>
-<approved hash="7,40,6e7e56556adce51b"/>
-<approved hash="7,40,ca42ecec43027696"/>
-<approved hash="7,40,a545003064b9031e"/>
-<approved hash="7,40,ccce60311888e509"/>
-<approved hash="7,40,da531555bab96085"/>
-<approved hash="7,40,cdce6023ff1a8389"/>
-<approved hash="7,40,cdfe5647c94e8389"/>
-<approved hash="7,40,25150073f1afeb7d"/>
-<approved hash="7,40,3cae3373e3ca1d6a"/>
-<approved hash="7,40,5dae2acffe761ef8"/>
-<approved hash="7,40,269503f3e813e8fd"/>
-<approved hash="7,40,d983368576104b75"/>
-<approved hash="7,40,5e2e3373e7ca1d78"/>
-<approved hash="7,40,3cae0073e814ed7d"/>
-<approved hash="7,40,3a125cbc0617aee6"/>
-<approved hash="7,40,3f2e03f3f1a8eefd"/>
-<approved hash="7,40,39925f3c1fabad66"/>
-<approved hash="7,40,3f2e2acffa761eea"/>
-<approved hash="7,40,da0335056fac48f5"/>
-<approved hash="7,40,fe2e2ade5de7b869"/>
-<approved hash="7,40,fdae3362445bbbe9"/>
-<approved hash="4,1,1f4addb7024feab2"/>
-<approved hash="4,1,da6a9897cdaf9552"/>
-<approved hash="4,1,d79f9562dabaa247"/>
-<approved hash="4,1,92bc504285996d67"/>
-<approved hash="5,1,1a49ea155daf6911"/>
-<approved hash="5,1,1e51ea255d9f6d09"/>
-<approved hash="5,1,16a1ea055dbf65f9"/>
-<approved hash="5,1,1299ea155daf61c1"/>
-<approved hash="5,1,fb89ea155daf88d1"/>
-<approved hash="5,1,ff91ea255d9f8cc9"/>
-<approved hash="5,1,f7e1ea055dbf84b9"/>
-<approved hash="5,1,26c1ea055dbf5599"/>
-<approved hash="5,1,2ae9ea155daf59b1"/>
-<approved hash="5,1,2ef1ea655ddf5da9"/>
-<approved hash="5,1,0279ea155daf7121"/>
-<approved hash="5,1,0601ea055dbf7559"/>
-<approved hash="5,1,0a29ea155daf7971"/>
-<approved hash="5,1,f3d9ea155daf8081"/>
-<approved hash="5,1,0e31ebe55c5f7d69"/>
-<approved hash="5,1,1f1fad4fa87dece9"/>
-<approved hash="5,1,cf86ae5dab4f3f50"/>
-<approved hash="5,1,07e3b54fa87dec15"/>
-<approved hash="5,1,d77ab65dab4f3fac"/>
-<approved hash="5,1,2fe79d4fa87dec11"/>
-<approved hash="5,1,ff7e9e5dab4f3fa8"/>
-<approved hash="5,1,8772e65dab4f3fa4"/>
-<approved hash="5,1,57ebe54fa87dec1d"/>
-<approved hash="5,1,af76ce5dab4f3fa0"/>
-<approved hash="5,1,7fefcd4fa87dec19"/>
-<approved hash="5,1,67f3d54fa87dec05"/>
-<approved hash="5,1,b76ad65dab4f3fbc"/>
-<approved hash="5,1,5f6e3e5dab4f3fb8"/>
-<approved hash="5,1,8ff73d4fa87dec01"/>
-<approved hash="5,1,b7fb054fa87dec0d"/>
-<approved hash="5,1,6762065dab4f3fb4"/>
-<approved hash="5,1,dfff6d4fa87dec09"/>
-<approved hash="5,1,0f666e5dab4f3fb0"/>
-<approved hash="5,1,c7c3754fa87dec35"/>
-<approved hash="5,1,175a765dab4f3f8c"/>
-<approved hash="5,1,efc75d4fa87dec31"/>
-<approved hash="5,1,3f5e5e5dab4f3f88"/>
-<approved hash="5,1,17c4a54fa87dec32"/>
-<approved hash="5,1,c75da65dab4f3f8b"/>
-<approved hash="5,1,ef518e5dab4f3f87"/>
-<approved hash="5,1,3fc88d4fa87dec3e"/>
-<approved hash="5,1,f755965dab4f3f83"/>
-<approved hash="5,1,27cc954fa87dec3a"/>
-<approved hash="5,1,4fd0fd4fa87dec26"/>
-<approved hash="5,1,9f49fe5dab4f3f9f"/>
-<approved hash="5,1,73f98174cfaf79a1"/>
-<approved hash="5,1,7fd18164cfbf7589"/>
-<approved hash="5,1,77e18084ce5f7db9"/>
-<approved hash="5,1,7ba98174cfaf71f1"/>
-<approved hash="5,1,8a098174cfaf8051"/>
-<approved hash="5,1,86418144cf9f8c19"/>
-<approved hash="5,1,67818144cf9f6dd9"/>
-<approved hash="5,1,63998174cfaf69c1"/>
-<approved hash="5,1,82598174cfaf8801"/>
-<approved hash="5,1,8e318164cfbf8469"/>
-<approved hash="5,1,6f718164cfbf6529"/>
-<approved hash="5,1,53398174cfaf5961"/>
-<approved hash="5,1,5f118164cfbf5549"/>
-<approved hash="5,1,57218104cfdf5d79"/>
-<approved hash="5,1,6b498174cfaf6111"/>
-<approved hash="4,16,1f4addb7024feab2"/>
-<approved hash="4,16,da6a9897cdaf9552"/>
-<approved hash="4,16,d79f9562dabaa247"/>
-<approved hash="4,16,92bc504285996d67"/>
-<approved hash="5,16,26ba675cdc4e425d"/>
-<approved hash="5,16,d4cfd4aefc4c63d4"/>
-<approved hash="5,16,4df4b3938498e506"/>
-<approved hash="5,16,21ba5434ef36454d"/>
-<approved hash="5,16,796cb3738468d18e"/>
-<approved hash="5,16,e747d35efbac504c"/>
-<approved hash="5,16,9db0ec62d7f455e9"/>
-<approved hash="5,16,d382aeb5ee3f60c7"/>
-<approved hash="5,16,41ba54505752ed42"/>
-<approved hash="5,16,a1080b73846981ea"/>
-<approved hash="5,16,46ba6738642aea52"/>
-<approved hash="5,16,6cab0cafac4c63b0"/>
-<approved hash="5,16,95900b938499b562"/>
-<approved hash="5,16,5f230b5fabac5028"/>
-<approved hash="5,16,d93c1355fe3fc649"/>
-</errors>
 </board>
 </drawing>
 </eagle>
