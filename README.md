@@ -8,9 +8,9 @@ Originally, I just wanted to monitor humidity and temperature in all rooms of my
 sensor
 ------
 
-With every step of hardware design, it grew a little bit bigger, so there are now two different version
+With every step of hardware design, it grew a little bit bigger, so there are two different version right now:
 
-- either a small headless version with dht22 and what else will fit on the board and µc, as cheap as possible (single sided, attiny)
+- either a small headless version with dht22 or one-wire and i2c, powered by attiny2313a, as cheap as possible (single sided with some bridges)
 
 - or a big version with lcd, twi/i2c, one-wire, quad direct analogue and quad opamp driven analogue in
 
