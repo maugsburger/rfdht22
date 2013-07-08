@@ -10877,6 +10877,433 @@ www.irf.com / irlml5203.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="creative-commons">
+<packages>
+<package name="CC_TOP">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="7.25" y="4.55" curve="-55.001443"/>
+<vertex x="6.6" y="4.1" curve="-99.997093"/>
+<vertex x="5.95" y="4.8"/>
+<vertex x="5.95" y="5.2" curve="-90"/>
+<vertex x="6.55" y="5.85" curve="-67.380135"/>
+<vertex x="7.15" y="5.45"/>
+<vertex x="7.8" y="5.8" curve="60.001456"/>
+<vertex x="6.55" y="6.55"/>
+<vertex x="6.5" y="6.55" curve="90.03162"/>
+<vertex x="5.05" y="5.2"/>
+<vertex x="5.05" y="4.85" curve="90.007903"/>
+<vertex x="6.45" y="3.4"/>
+<vertex x="6.65" y="3.4" curve="69.999297"/>
+<vertex x="7.85" y="4.25"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="4.35" y="4.55" curve="-55.001443"/>
+<vertex x="3.7" y="4.1" curve="-99.997093"/>
+<vertex x="3.05" y="4.8"/>
+<vertex x="3.05" y="5.2" curve="-90"/>
+<vertex x="3.65" y="5.85" curve="-67.380135"/>
+<vertex x="4.25" y="5.45"/>
+<vertex x="4.9" y="5.8" curve="60.001456"/>
+<vertex x="3.65" y="6.55"/>
+<vertex x="3.6" y="6.55" curve="90.03162"/>
+<vertex x="2.15" y="5.2"/>
+<vertex x="2.15" y="4.85" curve="90.007903"/>
+<vertex x="3.55" y="3.4"/>
+<vertex x="3.75" y="3.4" curve="69.999297"/>
+<vertex x="4.95" y="4.25"/>
+</polygon>
+</package>
+<package name="CC_TPLACE">
+<description>&lt;h2&gt;tPlace layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="7.25" y="4.55" curve="-55.001443"/>
+<vertex x="6.6" y="4.1" curve="-99.997093"/>
+<vertex x="5.95" y="4.8"/>
+<vertex x="5.95" y="5.2" curve="-90"/>
+<vertex x="6.55" y="5.85" curve="-67.380135"/>
+<vertex x="7.15" y="5.45"/>
+<vertex x="7.8" y="5.8" curve="60.001456"/>
+<vertex x="6.55" y="6.55"/>
+<vertex x="6.5" y="6.55" curve="90.03162"/>
+<vertex x="5.05" y="5.2"/>
+<vertex x="5.05" y="4.85" curve="90.007903"/>
+<vertex x="6.45" y="3.4"/>
+<vertex x="6.65" y="3.4" curve="69.999297"/>
+<vertex x="7.85" y="4.25"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="4.35" y="4.55" curve="-55.001443"/>
+<vertex x="3.7" y="4.1" curve="-99.997093"/>
+<vertex x="3.05" y="4.8"/>
+<vertex x="3.05" y="5.2" curve="-90"/>
+<vertex x="3.65" y="5.85" curve="-67.380135"/>
+<vertex x="4.25" y="5.45"/>
+<vertex x="4.9" y="5.8" curve="60.001456"/>
+<vertex x="3.65" y="6.55"/>
+<vertex x="3.6" y="6.55" curve="90.03162"/>
+<vertex x="2.15" y="5.2"/>
+<vertex x="2.15" y="4.85" curve="90.007903"/>
+<vertex x="3.55" y="3.4"/>
+<vertex x="3.75" y="3.4" curve="69.999297"/>
+<vertex x="4.95" y="4.25"/>
+</polygon>
+</package>
+<package name="CC_TOP_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="CC_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="BY_TOP">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="3.65" y="4.2"/>
+<vertex x="4.2" y="4.2"/>
+<vertex x="4.2" y="1.75"/>
+<vertex x="5.8" y="1.75"/>
+<vertex x="5.8" y="4.15"/>
+<vertex x="6.35" y="4.15"/>
+<vertex x="6.35" y="6.3" curve="90"/>
+<vertex x="6.1" y="6.55"/>
+<vertex x="3.9" y="6.55" curve="90"/>
+<vertex x="3.65" y="6.3"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="5" y="8.2"/>
+<vertex x="5.1" y="8.2" curve="-90"/>
+<vertex x="5.7" y="7.6"/>
+<vertex x="5.7" y="7.4" curve="-90"/>
+<vertex x="5.1" y="6.8"/>
+<vertex x="5" y="6.8"/>
+<vertex x="4.9" y="6.8" curve="-90"/>
+<vertex x="4.3" y="7.4"/>
+<vertex x="4.3" y="7.6" curve="-90"/>
+<vertex x="4.9" y="8.2"/>
+</polygon>
+</package>
+<package name="BY_TPLACE">
+<description>&lt;h2&gt;tPlace layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="3.65" y="4.2"/>
+<vertex x="4.2" y="4.2"/>
+<vertex x="4.2" y="1.75"/>
+<vertex x="5.8" y="1.75"/>
+<vertex x="5.8" y="4.15"/>
+<vertex x="6.35" y="4.15"/>
+<vertex x="6.35" y="6.3" curve="90"/>
+<vertex x="6.1" y="6.55"/>
+<vertex x="3.9" y="6.55" curve="90"/>
+<vertex x="3.65" y="6.3"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="5" y="8.2"/>
+<vertex x="5.1" y="8.2" curve="-90"/>
+<vertex x="5.7" y="7.6"/>
+<vertex x="5.7" y="7.4" curve="-90"/>
+<vertex x="5.1" y="6.8"/>
+<vertex x="5" y="6.8"/>
+<vertex x="4.9" y="6.8" curve="-90"/>
+<vertex x="4.3" y="7.4"/>
+<vertex x="4.3" y="7.6" curve="-90"/>
+<vertex x="4.9" y="8.2"/>
+</polygon>
+</package>
+<package name="BY_TOP_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="BY_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TOP">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="5" y="4.9" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.7" y="4.2"/>
+<vertex x="4" y="4.2" curve="90"/>
+<vertex x="4.9" y="3.3"/>
+<vertex x="5.1" y="3.3" curve="85.004066"/>
+<vertex x="6.25" y="4.6"/>
+<vertex x="6.25" y="5.2" curve="85.001192"/>
+<vertex x="5.25" y="6.6"/>
+<vertex x="5.1" y="6.6" curve="90"/>
+<vertex x="4" y="5.7"/>
+<vertex x="4.4" y="5.7"/>
+<vertex x="3.4" y="4.7"/>
+<vertex x="3.3" y="4.7"/>
+<vertex x="2.3" y="5.7"/>
+<vertex x="2.8" y="5.7" curve="-90"/>
+<vertex x="4.7" y="7.6"/>
+<vertex x="5.25" y="7.6" curve="-90"/>
+<vertex x="7.45" y="5.2"/>
+<vertex x="7.45" y="4.75" curve="-94.996202"/>
+<vertex x="5" y="2.2"/>
+<vertex x="4.7" y="2.2" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TPLACE">
+<description>&lt;h2&gt;tPlace layer&lt;/h2&gt;</description>
+<circle x="5" y="4.9" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.7" y="4.2"/>
+<vertex x="4" y="4.2" curve="90"/>
+<vertex x="4.9" y="3.3"/>
+<vertex x="5.1" y="3.3" curve="85.004066"/>
+<vertex x="6.25" y="4.6"/>
+<vertex x="6.25" y="5.2" curve="85.001192"/>
+<vertex x="5.25" y="6.6"/>
+<vertex x="5.1" y="6.6" curve="90"/>
+<vertex x="4" y="5.7"/>
+<vertex x="4.4" y="5.7"/>
+<vertex x="3.4" y="4.7"/>
+<vertex x="3.3" y="4.7"/>
+<vertex x="2.3" y="5.7"/>
+<vertex x="2.8" y="5.7" curve="-90"/>
+<vertex x="4.7" y="7.6"/>
+<vertex x="5.25" y="7.6" curve="-90"/>
+<vertex x="7.45" y="5.2"/>
+<vertex x="7.45" y="4.75" curve="-94.996202"/>
+<vertex x="5" y="2.2"/>
+<vertex x="4.7" y="2.2" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TOP_HS">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="1.35" y="2.1"/>
+<vertex x="2" y="2.1" curve="90"/>
+<vertex x="2.45" y="1.65"/>
+<vertex x="2.55" y="1.65" curve="85.004066"/>
+<vertex x="3.125" y="2.3"/>
+<vertex x="3.125" y="2.6" curve="85.001192"/>
+<vertex x="2.625" y="3.3"/>
+<vertex x="2.55" y="3.3" curve="90"/>
+<vertex x="2" y="2.85"/>
+<vertex x="2.2" y="2.85"/>
+<vertex x="1.7" y="2.35"/>
+<vertex x="1.65" y="2.35"/>
+<vertex x="1.15" y="2.85"/>
+<vertex x="1.4" y="2.85" curve="-90"/>
+<vertex x="2.35" y="3.8"/>
+<vertex x="2.625" y="3.8" curve="-90"/>
+<vertex x="3.725" y="2.6"/>
+<vertex x="3.725" y="2.375" curve="-94.996202"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.35" y="1.1" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="CC">
+<text x="0" y="0" size="1.778" layer="94">CC</text>
+</symbol>
+<symbol name="BY">
+<text x="0" y="0" size="1.778" layer="94">BY</text>
+</symbol>
+<symbol name="SA">
+<text x="0" y="0" size="1.778" layer="94">SA</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CC">
+<description>&lt;h1&gt;creatice commons - CC&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="CC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TOP" package="CC_TOP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE" package="CC_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TOP-HALF" package="CC_TOP_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE-HALF" package="CC_TPLACE_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BY">
+<description>&lt;h1&gt;creative commons &lt;p&gt;Attribution - BY&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="BY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TOP" package="BY_TOP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE" package="BY_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TOP-HALF" package="BY_TOP_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE-HS" package="BY_TPLACE_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SA">
+<description>&lt;h1&gt;creative commons &lt;p&gt;ShareAlike  - SA&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="SA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TOP" package="SA_TOP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE" package="SA_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE-HALF" package="SA_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TOP-HALF" package="SA_TOP_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10954,6 +11381,9 @@ www.irf.com / irlml5203.pdf</description>
 <part name="JP3" library="pinhead-mod" deviceset="PINHD-1X4" device="_2.54" value="serial"/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="U$1" library="creative-commons" deviceset="CC" device="-TOP-HALF"/>
+<part name="U$3" library="creative-commons" deviceset="BY" device="-TOP-HALF"/>
+<part name="U$4" library="creative-commons" deviceset="SA" device="-TOP-HALF"/>
 </parts>
 <sheets>
 <sheet>
@@ -11028,6 +11458,9 @@ www.irf.com / irlml5203.pdf</description>
 <instance part="JP3" gate="A" x="104.14" y="110.49"/>
 <instance part="P+9" gate="VCC" x="95.25" y="120.65"/>
 <instance part="GND5" gate="1" x="95.25" y="102.87"/>
+<instance part="U$1" gate="G$1" x="218.44" y="20.32"/>
+<instance part="U$3" gate="G$1" x="223.52" y="20.32"/>
+<instance part="U$4" gate="G$1" x="228.6" y="20.32"/>
 </instances>
 <busses>
 </busses>

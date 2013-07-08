@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -2482,6 +2482,95 @@ www.irf.com / irlml5203.pdf</description>
 </package>
 </packages>
 </library>
+<library name="creative-commons">
+<packages>
+<package name="CC_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="BY_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.35" y="2.1"/>
+<vertex x="2" y="2.1" curve="90"/>
+<vertex x="2.45" y="1.65"/>
+<vertex x="2.55" y="1.65" curve="85.004066"/>
+<vertex x="3.125" y="2.3"/>
+<vertex x="3.125" y="2.6" curve="85.001192"/>
+<vertex x="2.625" y="3.3"/>
+<vertex x="2.55" y="3.3" curve="90"/>
+<vertex x="2" y="2.85"/>
+<vertex x="2.2" y="2.85"/>
+<vertex x="1.7" y="2.35"/>
+<vertex x="1.65" y="2.35"/>
+<vertex x="1.15" y="2.85"/>
+<vertex x="1.4" y="2.85" curve="-90"/>
+<vertex x="2.35" y="3.8"/>
+<vertex x="2.625" y="3.8" curve="-90"/>
+<vertex x="3.725" y="2.6"/>
+<vertex x="3.725" y="2.375" curve="-94.996202"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.35" y="1.1" curve="-90"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2751,6 +2840,9 @@ www.irf.com / irlml5203.pdf</description>
 <element name="Q3" library="mosfet" package="MICRO3" value="IRLML6402" x="10.8" y="10" rot="MR0"/>
 <element name="JP4" library="pinhead-mod" package="1X06" value="ADC1" x="17.145" y="22.86" locked="yes" rot="MR90"/>
 <element name="JP5" library="pinhead-mod" package="1X06" value="ADC2" x="15.2" y="39.2" rot="MR180"/>
+<element name="U$1" library="creative-commons" package="CC_TPLACE_HS" value="CC-TPLACE-HALF" x="35.6" y="10" rot="MR0"/>
+<element name="U$3" library="creative-commons" package="BY_TPLACE_HS" value="BY-TPLACE-HS" x="30.4" y="10" rot="MR0"/>
+<element name="U$4" library="creative-commons" package="SA_TPLACE_HS" value="SA-TPLACE-HALF" x="25.2" y="10" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
