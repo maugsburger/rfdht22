@@ -1,14 +1,4 @@
-#include <stdbool.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <avr/io.h>
-#include <util/delay.h>
-#include <avr/interrupt.h>
-#include "nRF24L01.h"
-#include "spi.h"
-#include "wl_module.h"
-#include "dht22.h"
-
+#include "main.h"
 volatile uint8_t isr_interval;
 
 void dhtpwr_on() {
