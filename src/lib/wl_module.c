@@ -231,8 +231,7 @@ extern void wl_module_set_as_tx()
 //  clears the PWR_UP bit in the CONFIG register.
 //note: if the read value of the CONFIG register already has the PWR_UP bit cleared, this
 //  function exits in order to not make an unecessary register write.
-extern void wl_module_power_down()
-{
+extern void wl_module_power_down() {
 	unsigned char config;
 	
 	wl_module_read_register(CONFIG, &config, 1);
@@ -245,6 +244,22 @@ extern void wl_module_power_down()
 	wl_module_write_register(CONFIG, &config, 1);
 
 	wl_module_CE_lo;
+}
+
+extern void wl_module_power_up() {
+	unsigned char config;
+
+	wl_module_read_register(CONFIG, &config, 1);
+
+	if((config & CONFIG_PWR_UP) == 1)
+		return;
+
+	config |= CONFIG_PWR_UP;
+
+	wl_module_write_register(CONFIG, &config, 1);
+
+	wl_module_CE_lo;
+    _delay_ms(3);
 }
 
 //sets the RX address in the RX_ADDR register that is offset by rxpipenum

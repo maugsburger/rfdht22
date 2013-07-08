@@ -90,6 +90,7 @@ extern uint8_t wl_module_get_plos_cnt(void);
 extern uint8_t wl_module_get_arc_cnt(void);
 extern void wl_module_set_as_tx(void);			//activate module with existing config
 extern void wl_module_power_down(void);			//powers down the module with existing config
+extern void wl_module_power_up(void);			//powers up the module with existing config
 
 // Public extended functions
 extern void wl_module_config_register(uint8_t reg, uint8_t value);
