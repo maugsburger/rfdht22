@@ -9,6 +9,8 @@
 #include "wl_module.h"
 #include "dht22.h"
 
+volatile uint8_t isr_interval;
+
 void dhtpwr_on() {
         // PB2 == OC0A
         TCCR0A =    (1<<WGM01) | (1<<WGM00) | //
@@ -28,7 +30,17 @@ void dhtpwr_off() {
         DDRB &= ~(1<<PB2) | (1<<PB0);
         TCCR0A = (0<<WGM01) | (0<<WGM00);
         TCCR0B = (0<<CS01) | (0<<CS00);     // stop counter
+}
+
+void sleep_time(uint8_t sleepmode, uint8_t intervals ) {
+    wdt_reset();
+    isr_interval = intervals;
+    WDTCR = (1<<WDIF) | (1<<WDIE) | (1<<WDP3) | (1<<WDP0);
+    while(isr_interval > 0) {
+        set_sleep_mode(sleepmode);
+        sleep_mode();
     }
+    wdt_disable();
 }
 
 void blink(uint8_t c) {
@@ -81,6 +93,10 @@ int main (void) {
         _delay_ms(5000);
 
     }
+}
+
+ISR(WDT_OVERFLOW_vect) {
+    isr_interval--; 
 }
 
 #if defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny2313A__)
