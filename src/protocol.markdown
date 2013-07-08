@@ -123,4 +123,3 @@ a pairing of the sensor with the master (once) and probe configuration (every
 time the probes change/new ones are added).
 
 [0]: http://www.nordicsemi.com/kor/nordic/download_resource/8765/2/8827113 "nRF24L01+"
-
