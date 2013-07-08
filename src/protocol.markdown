@@ -95,7 +95,7 @@ A communication process will look like the following:
     payload[1], lower nibble = number of readings to transmit (up to 16)
     payload[1], higher nibble = needs update
 
-#### PipeX ACK
+#### PipeX first ACK
 
     payload[0] = transmit interval in 30s steps
     payload[1], lower nibble = outdoor brightness (adjust leds brightness)
@@ -108,10 +108,37 @@ A communication process will look like the following:
         PPPP    probe id
         DD      bytes data to be recieved
     payload[1…4] = one to four probe data bytes
+
+#### PipeX reading ACK
+
+Auto-generated, empty
     
 ### Config
 
-* [ ] write config protocol
+Althoug it would be nice to make the sensors configurable via master, this
+feature is currently not available, because it would make the master need to
+know about all sensors config details. This may be implemented in a future
+protocol version.
+
+There is no message back to the sensor if all masters probe channels are used,
+too. In this case the sensors state is "all configured", but the master doesn't
+know about the probes. 
+
+#### PipeX config packet
+
+As there can be up 32 bytes in a packet, but a sensor can only hold up to 16
+probes, we just send a list of all sensors unit bytes.
+
+    payload[n] = unit-data of sensor n
+
+#### PipeX ACK
+
+Auto-generated, empty
+
+### New Sensor
+
+No packets are needed, communication is over after Pipe0 ACK, but the
+client should start a config dialogue directly afterwards.
 
 ## Thoughts
 Up to 16 probes per sensor should be enough, else we need a sensor talking to
