@@ -9,23 +9,24 @@
 #include "wl_module.h"
 #include "dht22.h"
 
-void dhtpwr( bool on ) {
-    if( on ) {
+void dhtpwr_on() {
         // PB2 == OC0A
         TCCR0A =    (1<<WGM01) | (1<<WGM00) | //
                     (1<<COM0A1); // Clear OC0A on match, set at TOP
         TCCR0B = (0<<CS01) | (1<<CS00); // no prescaling
         OCR0A = 127;
 
-        // PB1 VCC für Doubler
-        PORTB |= (1<<PB1);
-        // PB2 und PB1 Ausgang
-        DDRB |= (1<<PB2) | (1<<PB1);
-    } else {
+        // PB2 und PB0 Ausgang
+        DDRB |= (1<<PB2) | (1<<PB0);
+        // PB0 VCC für Doubler
+        PORTB |= (1<<PB0);
+}
+
+void dhtpwr_off() {
         // PB2 und PB1 kein Ausgang
-        DDRB &= ~(1<<PB2) | (1<<PB1);
-        PORTB &= ~(1<<PB1);
-        TCCR0A = (0<<WGM01) | (0<<WGM00);   //normal port operation
+        PORTB &= ~(1<<PB0);
+        DDRB &= ~(1<<PB2) | (1<<PB0);
+        TCCR0A = (0<<WGM01) | (0<<WGM00);
         TCCR0B = (0<<CS01) | (0<<CS00);     // stop counter
     }
 }
