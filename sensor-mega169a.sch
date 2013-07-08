@@ -72,30 +72,9 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="196" name="aValue" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
-<layer number="201" name="201bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -10231,8 +10210,8 @@ www.irf.com / irlml5203.pdf</description>
 <wire x1="5.715" y1="0.762" x2="5.969" y2="0.508" width="0.1524" layer="94"/>
 <circle x="2.54" y="1.905" radius="0.127" width="0.4064" layer="94"/>
 <circle x="2.54" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
-<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="7.62" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="6.35" y="0.254" size="1.778" layer="95">&gt;NAME</text>
+<text x="6.35" y="-2.032" size="1.778" layer="96">&gt;VALUE</text>
 <text x="1.524" y="-3.302" size="0.8128" layer="93">D</text>
 <text x="1.524" y="2.54" size="0.8128" layer="93">S</text>
 <text x="-2.286" y="1.27" size="0.8128" layer="93">G</text>
@@ -10272,8 +10251,8 @@ www.irf.com / irlml5203.pdf</description>
 <wire x1="1.651" y1="0" x2="1.397" y2="0" width="0.3048" layer="94"/>
 <circle x="2.54" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
 <circle x="2.54" y="1.905" radius="0.127" width="0.4064" layer="94"/>
-<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="7.62" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="6.35" y="0.254" size="1.778" layer="95">&gt;NAME</text>
+<text x="6.35" y="-2.032" size="1.778" layer="96">&gt;VALUE</text>
 <text x="1.27" y="2.54" size="0.8128" layer="93">D</text>
 <text x="1.27" y="-3.175" size="0.8128" layer="93">S</text>
 <text x="-2.54" y="-1.27" size="0.8128" layer="93">G</text>
@@ -10432,6 +10411,7 @@ www.irf.com / irlml5203.pdf</description>
 <plain>
 <text x="123.19" y="29.21" size="1.778" layer="97">2xAA 3V</text>
 <text x="123.19" y="26.67" size="1.778" layer="97">DISCHARGED: 1,8V</text>
+<text x="5.08" y="38.1" size="1.778" layer="97">or use ATxmega64B3 as soon as avr-gcc suppots it. Much cheaper!</text>
 </plain>
 <instances>
 <instance part="B-" gate="1" x="96.52" y="12.7" rot="R90"/>
@@ -10495,8 +10475,8 @@ www.irf.com / irlml5203.pdf</description>
 <instance part="R8" gate="G$1" x="110.49" y="132.08" rot="R270"/>
 <instance part="R11" gate="G$1" x="118.11" y="132.08" rot="R270"/>
 <instance part="P+5" gate="VCC" x="179.07" y="113.03"/>
-<instance part="Q2" gate="G$1" x="236.22" y="90.17"/>
-<instance part="GND1" gate="1" x="238.76" y="82.55"/>
+<instance part="Q2" gate="G$1" x="236.22" y="87.63"/>
+<instance part="GND1" gate="1" x="238.76" y="80.01"/>
 <instance part="P+7" gate="VCC" x="234.95" y="116.84"/>
 <instance part="R12" gate="G$1" x="234.95" y="106.68" rot="R270"/>
 <instance part="JP3" gate="A" x="120.65" y="156.21"/>
@@ -11270,8 +11250,8 @@ www.irf.com / irlml5203.pdf</description>
 <net name="1WON" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="233.68" y1="87.63" x2="220.98" y2="87.63" width="0.1524" layer="91"/>
-<label x="220.98" y="87.63" size="1.778" layer="95"/>
+<wire x1="233.68" y1="85.09" x2="220.98" y2="85.09" width="0.1524" layer="91"/>
+<label x="220.98" y="85.09" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="(SEG19)PD3"/>
@@ -11283,6 +11263,7 @@ www.irf.com / irlml5203.pdf</description>
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <pinref part="JP2" gate="A" pin="3"/>
+<wire x1="238.76" y1="92.71" x2="238.76" y2="95.25" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="95.25" x2="246.38" y2="95.25" width="0.1524" layer="91"/>
 </segment>
 </net>
