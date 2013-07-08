@@ -8,8 +8,22 @@
 
 #if F_CPU == 8000000 
     #define TCCR1DIVIDE (0<<CS12) | (1<<CS11) | (0<<CS10)
+    #define DHT22_0_MIN 20
+    #define DHT22_0_MAX 30
+    #define DHT22_1_MIN 65
+    #define DHT22_1_MAX 76
 #elif F_CPU == 1000000 
     #define TCCR1DIVIDE (0<<CS12) | (0<<CS11) | (1<<CS10)
+    #define DHT22_0_MIN 20
+    #define DHT22_0_MAX 30
+    #define DHT22_1_MIN 65
+    #define DHT22_1_MAX 76
+#elif F_CPU == 4000000
+    #define TCCR1DIVIDE (0<<CS12) | (1<<CS11) | (0<<CS10)
+    #define DHT22_0_MIN 20 / 2
+    #define DHT22_0_MAX 30 / 2
+    #define DHT22_1_MIN 65 / 2
+    #define DHT22_1_MAX 76 / 2
 #else
     #error No supported CPU Freq
 #endif
@@ -29,3 +43,5 @@
  */
 
 int dhtmeasure(uint16_t *temp, uint16_t *hum);
+
+void dhtinit( void );

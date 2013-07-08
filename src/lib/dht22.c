@@ -65,10 +65,10 @@ int dhtmeasure(uint16_t *temp, uint16_t *hum) {
     *hum = 0;
 
     for (int i = 0; i < pintime_pos; i++) {
-        if ( pintime[i] < 30 && pintime[i] > 20 ) {
+        if ( pintime[i] < DHT22_0_MAX && pintime[i] > DHT22_0_MIN ) {
             dht22data[ dht22data_bitcount / 8 ] <<= 1;
             dht22data_bitcount++;
-        } else if ( pintime[i] > 65 && pintime[i] < 76 ) {
+        } else if ( pintime[i] > DHT22_1_MIN && pintime[i] < DHT22_1_MAX) {
             dht22data[ dht22data_bitcount / 8 ] <<= 1;
             dht22data[ dht22data_bitcount / 8 ] |= 1;
             dht22data_bitcount++;
