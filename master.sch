@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11396,7 +11396,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="lcd_displays" deviceset="BTHQ24008VSS" device=""/>
-<part name="IC1" library="avr-7" deviceset="MEGA164P/324P/644P-PU" device=""/>
+<part name="IC1" library="avr-7" deviceset="MEGA164P/324P/644P-PU" device="" value="MEGA164/324/644/1284"/>
 <part name="R3" library="pot" deviceset="TRIM_EU-" device="ST10" value="10k"/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
