@@ -2960,9 +2960,9 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="30.35" y1="26" x2="29.95" y2="26.4" width="0.254" layer="16"/>
 <wire x1="19.6" y1="32" x2="11.49" y2="32" width="0.254" layer="16"/>
 <wire x1="19.6" y1="32" x2="23.66" y2="27.94" width="0.254" layer="16"/>
-<wire x1="23.66" y1="27.94" x2="27.2" y2="24.4" width="0.254" layer="16"/>
-<wire x1="27.2" y1="24.4" x2="27.2" y2="19.2" width="0.254" layer="16"/>
-<wire x1="27.2" y1="19.2" x2="26.4" y2="18.4" width="0.254" layer="16"/>
+<wire x1="23.66" y1="27.94" x2="27.4" y2="24.2" width="0.254" layer="16"/>
+<wire x1="27.4" y1="24.2" x2="27.4" y2="19.4" width="0.254" layer="16"/>
+<wire x1="27.4" y1="19.4" x2="26.4" y2="18.4" width="0.254" layer="16"/>
 <wire x1="26.4" y1="18.4" x2="24.85" y2="18.4" width="0.254" layer="16"/>
 <wire x1="24.85" y1="18.4" x2="24.8" y2="18.45" width="0.254" layer="16"/>
 <wire x1="11.49" y1="39.245" x2="13.397" y2="37.338" width="0.254" layer="1"/>
@@ -2974,17 +2974,15 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="36.897" y1="34.053" x2="37.49" y2="33.46" width="0.254" layer="16"/>
 <wire x1="30.4" y1="26.05" x2="30.4" y2="25.2" width="0.254" layer="16"/>
 <wire x1="30.4" y1="25.2" x2="30.8" y2="24.8" width="0.254" layer="16"/>
-<wire x1="30.8" y1="24.8" x2="33.6" y2="24.8" width="0.254" layer="16"/>
-<wire x1="33.6" y1="24.8" x2="34.85" y2="26.05" width="0.254" layer="16"/>
-<wire x1="34.85" y1="26.05" x2="36.8" y2="26.05" width="0.254" layer="16"/>
-<wire x1="36.8" y1="21.15" x2="35.25" y2="21.15" width="0.254" layer="16"/>
-<wire x1="35.25" y1="21.15" x2="33.6" y2="22.8" width="0.254" layer="16"/>
-<wire x1="33.6" y1="22.8" x2="33.6" y2="24.8" width="0.254" layer="16"/>
+<wire x1="30.8" y1="24.8" x2="34.7" y2="24.8" width="0.254" layer="16"/>
+<wire x1="34.7" y1="24.8" x2="35.95" y2="26.05" width="0.254" layer="16"/>
+<wire x1="35.95" y1="26.05" x2="36.8" y2="26.05" width="0.254" layer="16"/>
+<wire x1="36.8" y1="21.15" x2="34.7" y2="21.15" width="0.254" layer="16"/>
+<wire x1="34.7" y1="21.15" x2="34.7" y2="24.8" width="0.254" layer="16"/>
 <wire x1="45.67" y1="25.505" x2="45.125" y2="26.05" width="0.254" layer="16"/>
 <wire x1="45.125" y1="26.05" x2="44.4" y2="26.05" width="0.254" layer="16"/>
 <wire x1="44.4" y1="26.05" x2="36.8" y2="26.05" width="0.254" layer="16"/>
-<wire x1="35.25" y1="21.15" x2="33.6" y2="19.5" width="0.254" layer="16"/>
-<wire x1="33.6" y1="19.5" x2="33.6" y2="16.8" width="0.254" layer="16"/>
+<wire x1="33.6" y1="20.05" x2="33.6" y2="16.8" width="0.254" layer="16"/>
 <wire x1="33.6" y1="16.8" x2="33.6" y2="15.1" width="0.254" layer="16"/>
 <wire x1="33.6" y1="15.1" x2="33.6" y2="13.45" width="0.254" layer="1"/>
 <wire x1="44.4" y1="26.05" x2="44.4" y2="36.8" width="0.254" layer="16"/>
@@ -3001,6 +2999,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="36.897" y1="39.245" x2="36.897" y2="34.053" width="0.254" layer="16"/>
 <wire x1="36.897" y1="39.245" x2="36.897" y2="37.405" width="0.254" layer="1"/>
 <wire x1="36.897" y1="37.405" x2="36.83" y2="37.338" width="0.254" layer="1"/>
+<wire x1="34.7" y1="21.15" x2="33.6" y2="20.05" width="0.254" layer="16"/>
 </signal>
 <signal name="RFCE">
 <contactref element="M1" pad="CE"/>
@@ -3280,14 +3279,16 @@ Based on the datasheets for the following products.&lt;br&gt;
 </signal>
 <signal name="SDA">
 <contactref element="UC1" pad="1"/>
-<wire x1="26.4" y1="13.45" x2="26.4" y2="16" width="0.254" layer="1"/>
+<wire x1="26.4" y1="13.45" x2="26.4" y2="16.2" width="0.254" layer="1"/>
 <contactref element="R8" pad="2"/>
 <contactref element="X3" pad="2"/>
-<wire x1="43.13" y1="24.235" x2="34.635" y2="24.235" width="0.254" layer="16"/>
-<wire x1="34.635" y1="24.235" x2="26.4" y2="16" width="0.254" layer="1"/>
-<via x="34.635" y="24.235" extent="1-16" drill="0.4"/>
-<wire x1="34.635" y1="24.235" x2="36.685" y2="24.235" width="0.254" layer="16"/>
+<wire x1="43.13" y1="24.235" x2="36.685" y2="24.235" width="0.254" layer="16"/>
 <wire x1="36.685" y1="24.235" x2="36.8" y2="24.35" width="0.254" layer="16"/>
+<wire x1="26.4" y1="16.2" x2="34.6" y2="24.4" width="0.254" layer="1"/>
+<wire x1="36.685" y1="24.235" x2="36.52" y2="24.4" width="0.254" layer="16"/>
+<wire x1="36.52" y1="24.4" x2="35.5" y2="24.4" width="0.254" layer="16"/>
+<via x="35.5" y="24.4" extent="1-16" drill="0.4"/>
+<wire x1="35.5" y1="24.4" x2="34.6" y2="24.4" width="0.254" layer="1"/>
 </signal>
 <signal name="TXD">
 <contactref element="X1" pad="3"/>
@@ -3296,9 +3297,9 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="16.57" y1="34.63" x2="17.6" y2="33.6" width="0.254" layer="16"/>
 <wire x1="17.6" y1="33.6" x2="20" y2="33.6" width="0.254" layer="16"/>
 <wire x1="20" y1="33.6" x2="28.8" y2="24.8" width="0.254" layer="16"/>
-<wire x1="28.8" y1="24.8" x2="28.8" y2="15.8" width="0.254" layer="16"/>
-<via x="28.8" y="15.8" extent="1-16" drill="0.4"/>
-<wire x1="28.8" y1="15.8" x2="28.8" y2="13.45" width="0.254" layer="1"/>
+<wire x1="28.8" y1="24.8" x2="28.8" y2="16" width="0.254" layer="16"/>
+<via x="28.8" y="16" extent="1-16" drill="0.4"/>
+<wire x1="28.8" y1="16" x2="28.8" y2="13.45" width="0.254" layer="1"/>
 </signal>
 <signal name="RXD">
 <contactref element="X1" pad="2"/>
@@ -3307,9 +3308,9 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="14.03" y1="34.77" x2="16" y2="32.8" width="0.254" layer="16"/>
 <wire x1="16" y1="32.8" x2="19.8" y2="32.8" width="0.254" layer="16"/>
 <wire x1="19.8" y1="32.8" x2="28" y2="24.6" width="0.254" layer="16"/>
-<wire x1="28" y1="24.6" x2="28" y2="15.1" width="0.254" layer="16"/>
-<via x="28" y="15.1" extent="1-16" drill="0.4"/>
-<wire x1="28" y1="15.1" x2="28" y2="13.45" width="0.254" layer="1"/>
+<wire x1="28" y1="24.6" x2="28" y2="15.3" width="0.254" layer="16"/>
+<via x="28" y="15.3" extent="1-16" drill="0.4"/>
+<wire x1="28" y1="15.3" x2="28" y2="13.45" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="L1" pad="1"/>
@@ -3341,15 +3342,16 @@ Based on the datasheets for the following products.&lt;br&gt;
 </signal>
 <signal name="SCL">
 <contactref element="UC1" pad="2"/>
-<wire x1="27.2" y1="15.6" x2="27.2" y2="13.45" width="0.254" layer="1"/>
+<wire x1="27.2" y1="16" x2="27.2" y2="13.45" width="0.254" layer="1"/>
 <contactref element="R11" pad="2"/>
 <contactref element="X3" pad="3"/>
-<wire x1="34.965" y1="22.965" x2="45.67" y2="22.965" width="0.254" layer="16"/>
-<via x="34.965" y="22.965" extent="1-16" drill="0.4"/>
-<wire x1="27.2" y1="15.6" x2="34.565" y2="22.965" width="0.254" layer="1"/>
-<wire x1="34.565" y1="22.965" x2="34.965" y2="22.965" width="0.254" layer="1"/>
-<wire x1="34.965" y1="22.965" x2="36.685" y2="22.965" width="0.254" layer="16"/>
+<wire x1="36.685" y1="22.965" x2="45.67" y2="22.965" width="0.254" layer="16"/>
+<wire x1="27.2" y1="16" x2="34" y2="22.8" width="0.254" layer="1"/>
 <wire x1="36.685" y1="22.965" x2="36.8" y2="22.85" width="0.254" layer="16"/>
+<wire x1="36.685" y1="22.965" x2="36.52" y2="22.8" width="0.254" layer="16"/>
+<wire x1="36.52" y1="22.8" x2="35.5" y2="22.8" width="0.254" layer="16"/>
+<via x="35.5" y="22.8" extent="1-16" drill="0.4"/>
+<wire x1="35.5" y1="22.8" x2="34" y2="22.8" width="0.254" layer="1"/>
 </signal>
 <signal name="LED1">
 <wire x1="18.4" y1="9.6" x2="15.03" y2="9.6" width="0.254" layer="1"/>
@@ -3385,9 +3387,6 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="42" y1="17.2" x2="42.4" y2="16.8" width="0.254" layer="1"/>
 <wire x1="45.72" y1="6.35" x2="45.72" y2="6.985" width="0.254" layer="16"/>
 <wire x1="45.72" y1="6.985" x2="42.4" y2="10.305" width="0.254" layer="16"/>
-</signal>
-<signal name="SEG14">
-<contactref element="UC1" pad="27"/>
 </signal>
 <signal name="AVCC">
 <contactref element="UC1" pad="56"/>
@@ -3518,12 +3517,13 @@ Based on the datasheets for the following products.&lt;br&gt;
 <signal name="PDID">
 <contactref element="UC1" pad="14"/>
 <contactref element="X6" pad="3"/>
-<wire x1="41.977" y1="31.577" x2="37.6" y2="27.2" width="0.254" layer="16"/>
-<via x="37.6" y="27.2" extent="1-16" drill="0.4"/>
+<wire x1="41.977" y1="31.577" x2="40" y2="29.6" width="0.254" layer="16"/>
+<wire x1="40" y1="29.6" x2="37.6" y2="27.2" width="0.254" layer="1"/>
 <wire x1="37.6" y1="27.2" x2="37.6" y2="15.6" width="0.254" layer="1"/>
 <wire x1="37.6" y1="15.6" x2="36.8" y2="14.8" width="0.254" layer="1"/>
 <wire x1="36.8" y1="14.8" x2="36.8" y2="13.45" width="0.254" layer="1"/>
 <wire x1="41.977" y1="39.245" x2="41.977" y2="31.577" width="0.254" layer="16"/>
+<via x="40" y="29.6" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="DHTADCON">
 <contactref element="UC1" pad="53"/>
