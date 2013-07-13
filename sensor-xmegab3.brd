@@ -2472,10 +2472,10 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="-4.615" y1="2.2225" x2="-2.075" y2="1.905" width="0.127" layer="21"/>
 <pad name="P$5" x="0" y="2.2" drill="0.9"/>
 <pad name="P$6" x="0" y="-2.2" drill="0.9"/>
-<smd name="P$1" x="-3" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P$2" x="-3" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P$3" x="2.5" y="-4.4" dx="2.5" dy="2" layer="1"/>
-<smd name="P$4" x="2.5" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD3" x="-3" y="-4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD1" x="-3" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD4" x="2.5" y="-4.4" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD2" x="2.5" y="4.5" dx="2.5" dy="2" layer="1"/>
 <smd name="D+" x="2.5" y="0" dx="2.5" dy="0.5" layer="1"/>
 <smd name="D-" x="2.5" y="0.8" dx="2.5" dy="0.5" layer="1"/>
 <smd name="VBUS" x="2.5" y="1.6" dx="2.5" dy="0.5" layer="1"/>
@@ -3654,16 +3654,6 @@ Based on the datasheets for the following products.&lt;br&gt;
 </polygon>
 </signal>
 </signals>
-<errors>
-<approved hash="4,1,1fc5dd3202caea3d"/>
-<approved hash="4,1,dae59812cd2a95dd"/>
-<approved hash="4,1,d71095e7da3fa2c8"/>
-<approved hash="4,1,923350c7851c6de8"/>
-<approved hash="4,16,1fc5dd3202caea3d"/>
-<approved hash="4,16,dae59812cd2a95dd"/>
-<approved hash="4,16,d71095e7da3fa2c8"/>
-<approved hash="4,16,923350c7851c6de8"/>
-</errors>
 </board>
 </drawing>
 </eagle>

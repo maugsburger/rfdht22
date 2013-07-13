@@ -8033,16 +8033,15 @@ Mit Batteriefach 2xAA/9V
 <text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="DHT22">
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<pin name="VCC" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="5.08" length="middle" direction="pwr"/>
 <pin name="GND" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
 <pin name="DATA" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="NC" x="12.7" y="2.54" length="middle" direction="nc" rot="R180"/>
-<text x="-7.62" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-7.62" size="1.27" layer="95">&gt;VALUE</text>
+<text x="-7.62" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8077,7 +8076,6 @@ Mit Batteriefach 2xAA/9V
 <connects>
 <connect gate="G$1" pin="DATA" pad="2"/>
 <connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="NC" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
@@ -8088,7 +8086,6 @@ Mit Batteriefach 2xAA/9V
 <connects>
 <connect gate="G$1" pin="DATA" pad="2"/>
 <connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="NC" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
@@ -9102,7 +9099,7 @@ www.irf.com / irlml5203.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="IRLML2502">
+<deviceset name="IRLML2502" prefix="Q">
 <description>&lt;b&gt;HEXFET N-Channel Power MOSFET&lt;/b&gt;
 &lt;p&gt;&lt;a href="http://www.irf.com/product-info/datasheets/data/irlml2502.pdf"&gt;http://www.irf.com/product-info/datasheets/data/irlml2502.pdf&lt;/a&gt;</description>
 <gates>
@@ -9968,10 +9965,10 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="-4.615" y1="2.2225" x2="-2.075" y2="1.905" width="0.127" layer="21"/>
 <pad name="P$5" x="0" y="2.2" drill="0.9"/>
 <pad name="P$6" x="0" y="-2.2" drill="0.9"/>
-<smd name="P$1" x="-3" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P$2" x="-3" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P$3" x="2.5" y="-4.4" dx="2.5" dy="2" layer="1"/>
-<smd name="P$4" x="2.5" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD3" x="-3" y="-4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD1" x="-3" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD4" x="2.5" y="-4.4" dx="2.5" dy="2" layer="1"/>
+<smd name="SHIELD2" x="2.5" y="4.5" dx="2.5" dy="2" layer="1"/>
 <smd name="D+" x="2.5" y="0" dx="2.5" dy="0.5" layer="1"/>
 <smd name="D-" x="2.5" y="0.8" dx="2.5" dy="0.5" layer="1"/>
 <smd name="VBUS" x="2.5" y="1.6" dx="2.5" dy="0.5" layer="1"/>
@@ -9995,8 +9992,8 @@ Based on the datasheets for the following products.&lt;br&gt;
 <pad name="D-" x="2.7178" y="1.0033" drill="0.9144" rot="R270"/>
 <pad name="D+" x="2.7178" y="-1.0033" drill="0.9144" rot="R270"/>
 <pad name="GND" x="2.7178" y="-3.4925" drill="0.9144" rot="R270"/>
-<pad name="P$5" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
-<pad name="P$6" x="0" y="6.5659" drill="2.3114" rot="R270"/>
+<pad name="SHIELD2" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
+<pad name="SHIELD1" x="0" y="6.5659" drill="2.3114" rot="R270"/>
 <text x="5.715" y="3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="USB-B-H">
@@ -10015,8 +10012,8 @@ Based on the datasheets for the following products.&lt;br&gt;
 <pad name="D-" x="1.9812" y="1.25" drill="0.9144" rot="R90"/>
 <pad name="D+" x="0" y="1.25" drill="0.9144" rot="R270"/>
 <pad name="GND" x="0" y="-1.25" drill="0.9144" rot="R270"/>
-<pad name="P$1" x="-2.7178" y="-6.0198" drill="2.286"/>
-<pad name="P$2" x="-2.7178" y="6.0198" drill="2.286"/>
+<pad name="SHIELD2" x="-2.7178" y="-6.0198" drill="2.286"/>
+<pad name="SHIELD1" x="-2.7178" y="6.0198" drill="2.286"/>
 <text x="5.06" y="3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="USB-A-S">
@@ -10031,8 +10028,8 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="-2.54" y1="5.08" x2="-8.89" y2="4.445" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="4.445" x2="-8.89" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
-<pad name="P$5" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
-<pad name="P$6" x="0" y="6.5659" drill="2.3114" rot="R270"/>
+<pad name="SHIELD2" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
+<pad name="SHIELD1" x="0" y="6.5659" drill="2.3114" rot="R270"/>
 <smd name="D-" x="3.45" y="1" dx="3" dy="0.9" layer="1"/>
 <smd name="VBUS" x="3.45" y="3" dx="3" dy="0.9" layer="1"/>
 <smd name="D+" x="3.45" y="-1" dx="3" dy="0.9" layer="1"/>
@@ -10059,8 +10056,8 @@ Based on the datasheets for the following products.&lt;br&gt;
 <pad name="GND" x="5.1" y="-1.6" drill="0.8"/>
 <pad name="D-" x="3.9" y="0.8" drill="0.8"/>
 <pad name="ID" x="3.9" y="-0.8" drill="0.8"/>
-<pad name="P$6" x="0" y="-3.65" drill="1.9"/>
-<pad name="P$7" x="0" y="3.65" drill="1.9"/>
+<pad name="SHIELD2" x="0" y="-3.65" drill="1.9"/>
+<pad name="SHIELD1" x="0" y="3.65" drill="1.9"/>
 <text x="7.25" y="1.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <rectangle x1="3.25" y1="3" x2="5.75" y2="4.4" layer="43"/>
 <rectangle x1="3.25" y1="-4.4" x2="5.75" y2="-3" layer="43"/>
@@ -10077,10 +10074,10 @@ Based on the datasheets for the following products.&lt;br&gt;
 <pad name="D+" x="2.73" y="0" drill="0.9"/>
 <pad name="D-" x="4.73" y="0" drill="0.9"/>
 <pad name="VBUS" x="6.73" y="0" drill="0.9"/>
-<pad name="P$5" x="0" y="2.72" drill="1.5"/>
-<pad name="P$6" x="0" y="-2.72" drill="1.5"/>
-<pad name="P$7" x="7" y="2.72" drill="1.5"/>
-<pad name="P$8" x="7" y="-2.72" drill="1.5"/>
+<pad name="SHIELD1" x="0" y="2.72" drill="1.5"/>
+<pad name="SHIELD4" x="0" y="-2.72" drill="1.5"/>
+<pad name="SHIELD2" x="7" y="2.72" drill="1.5"/>
+<pad name="SHIELD3" x="7" y="-2.72" drill="1.5"/>
 <text x="10" y="1" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="USB-B-SMT">
@@ -10116,12 +10113,12 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="6" y1="0.5" x2="5" y2="0.5" width="0.0504" layer="21"/>
 <wire x1="5" y1="0.5" x2="5" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="5" y1="-0.5" x2="6" y2="-0.5" width="0.0504" layer="21"/>
-<smd name="5" x="0.58" y="6.8" dx="6.04" dy="3.4" layer="1"/>
-<smd name="6" x="0.58" y="-6.8" dx="6.04" dy="3.4" layer="1"/>
+<smd name="SHIELD1" x="0.58" y="6.8" dx="6.04" dy="3.4" layer="1"/>
+<smd name="SHIELD2" x="0.58" y="-6.8" dx="6.04" dy="3.4" layer="1"/>
 <smd name="D+" x="7" y="1.875" dx="3" dy="0.7" layer="1"/>
 <smd name="D-" x="7" y="0.625" dx="3" dy="0.7" layer="1"/>
 <smd name="GND" x="7" y="-0.625" dx="3" dy="0.7" layer="1"/>
-<smd name="VUSB" x="7" y="-1.875" dx="3" dy="0.7" layer="1"/>
+<smd name="VBUS" x="7" y="-1.875" dx="3" dy="0.7" layer="1"/>
 <text x="9.525" y="6.35" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <hole x="0" y="2.25" drill="1.4"/>
 <hole x="0" y="-2.25" drill="1.4"/>
@@ -10143,10 +10140,10 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="2.8" y1="-1.4" x2="2.8" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-2.8" y1="1.4" x2="-2.8" y2="-1.4" width="0.127" layer="21"/>
 <wire x1="-2.8" y1="1.4" x2="2.8" y2="1.4" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="-5.65" drill="2.4"/>
-<pad name="P$2" x="-6.02" y="-1.34" drill="2.4"/>
-<pad name="P$3" x="6.02" y="-1.34" drill="2.4"/>
-<pad name="P$4" x="0" y="5.35" drill="2.4"/>
+<pad name="SHIELD3" x="0" y="-5.65" drill="2.4"/>
+<pad name="SHIELD4" x="-6.02" y="-1.34" drill="2.4"/>
+<pad name="SHIELD2" x="6.02" y="-1.34" drill="2.4"/>
+<pad name="SHIELD1" x="0" y="5.35" drill="2.4"/>
 <pad name="GND" x="1.25" y="-1.8" drill="0.9144" rot="R90"/>
 <pad name="VBUS" x="1.25" y="1.4" drill="0.9144" rot="R90"/>
 <pad name="D-" x="-1.25" y="1.4" drill="0.9144" rot="R270"/>
@@ -10155,15 +10152,16 @@ Based on the datasheets for the following products.&lt;br&gt;
 </packages>
 <symbols>
 <symbol name="USB">
-<wire x1="5.08" y1="8.89" x2="0" y2="8.89" width="0.254" layer="94"/>
-<wire x1="0" y1="8.89" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<text x="3.81" y="0" size="2.54" layer="94" rot="R90">USB</text>
+<wire x1="7.62" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<text x="6.35" y="0" size="2.54" layer="94" rot="R90">USB</text>
 <text x="0" y="-5.08" size="1.27" layer="95">&gt;NAME</text>
-<pin name="D+" x="-2.54" y="7.62" visible="pad" length="short"/>
-<pin name="D-" x="-2.54" y="5.08" visible="pad" length="short"/>
-<pin name="VBUS" x="-2.54" y="2.54" visible="pad" length="short"/>
-<pin name="GND" x="-2.54" y="0" visible="pad" length="short"/>
+<pin name="D+" x="-2.54" y="5.08" visible="pad" length="middle"/>
+<pin name="D-" x="-2.54" y="2.54" visible="pad" length="middle"/>
+<pin name="VBUS" x="-2.54" y="7.62" visible="pad" length="middle"/>
+<pin name="GND" x="-2.54" y="0" visible="pad" length="middle"/>
+<pin name="SHIELD" x="-2.54" y="-2.54" visible="pad" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10178,6 +10176,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10189,6 +10188,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10200,6 +10200,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10211,6 +10212,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10222,6 +10224,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10233,6 +10236,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10244,7 +10248,8 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VBUS" pad="VUSB"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10255,6 +10260,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10471,8 +10477,8 @@ VCC 1.8V max. H 2.1V</text>
 <instance part="GND1" gate="1" x="146.05" y="71.12" rot="R180"/>
 <instance part="X5" gate="G$1" x="242.57" y="152.4"/>
 <instance part="GND13" gate="1" x="237.49" y="147.32"/>
-<instance part="R5" gate="G$1" x="223.52" y="154.94" rot="R180"/>
-<instance part="R6" gate="G$1" x="229.87" y="151.13" rot="R180"/>
+<instance part="R5" gate="G$1" x="223.52" y="160.02" rot="R180"/>
+<instance part="R6" gate="G$1" x="223.52" y="152.4" rot="R180"/>
 <instance part="X6" gate="A" x="63.5" y="36.83"/>
 <instance part="Q1" gate="G$1" x="208.28" y="116.84"/>
 </instances>
@@ -10578,12 +10584,11 @@ VCC 1.8V max. H 2.1V</text>
 <segment>
 <pinref part="X5" gate="G$1" pin="GND"/>
 <wire x1="240.03" y1="152.4" x2="237.49" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="237.49" y1="152.4" x2="237.49" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="237.49" y1="151.13" x2="237.49" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="234.95" y1="151.13" x2="237.49" y2="151.13" width="0.1524" layer="91"/>
-<junction x="237.49" y="151.13"/>
+<wire x1="237.49" y1="152.4" x2="237.49" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="152.4" x2="237.49" y2="152.4" width="0.1524" layer="91"/>
+<junction x="237.49" y="152.4"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -10651,7 +10656,7 @@ VCC 1.8V max. H 2.1V</text>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="135.89" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="138.43" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="137.16" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="M2" gate="G$1" pin="VCC"/>
 <junction x="218.44" y="137.16"/>
@@ -11371,19 +11376,18 @@ VCC 1.8V max. H 2.1V</text>
 </segment>
 <segment>
 <pinref part="X5" gate="G$1" pin="D+"/>
-<wire x1="240.03" y1="160.02" x2="227.33" y2="160.02" width="0.1524" layer="91"/>
-<label x="227.33" y="160.02" size="1.778" layer="95"/>
+<wire x1="240.03" y1="157.48" x2="227.33" y2="157.48" width="0.1524" layer="91"/>
+<label x="227.33" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USBV" class="0">
 <segment>
-<label x="213.36" y="154.94" size="1.778" layer="95"/>
-<wire x1="218.44" y1="154.94" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
+<label x="212.09" y="160.02" size="1.778" layer="95"/>
+<wire x1="218.44" y1="160.02" x2="212.09" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="154.94" x2="218.44" y2="151.13" width="0.1524" layer="91"/>
-<junction x="218.44" y="154.94"/>
+<wire x1="218.44" y1="160.02" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
+<junction x="218.44" y="160.02"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="151.13" x2="224.79" y2="151.13" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="24.13" y1="133.35" x2="33.02" y2="133.35" width="0.1524" layer="91"/>
@@ -11394,8 +11398,8 @@ VCC 1.8V max. H 2.1V</text>
 <net name="USBD_N" class="0">
 <segment>
 <pinref part="X5" gate="G$1" pin="D-"/>
-<wire x1="240.03" y1="157.48" x2="227.33" y2="157.48" width="0.1524" layer="91"/>
-<label x="227.33" y="157.48" size="1.778" layer="95"/>
+<wire x1="240.03" y1="154.94" x2="227.33" y2="154.94" width="0.1524" layer="91"/>
+<label x="227.33" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="UC1" gate="G$1" pin="PD0(D-)"/>
@@ -11407,7 +11411,7 @@ VCC 1.8V max. H 2.1V</text>
 <segment>
 <pinref part="X5" gate="G$1" pin="VBUS"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="240.03" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="240.03" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
