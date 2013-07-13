@@ -3434,12 +3434,12 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <contactref element="R11" pad="2"/>
 <contactref element="X3" pad="3"/>
 <contactref element="U1" pad="37"/>
-<wire x1="38.98301875" y1="61.057178125" x2="40.8" y2="58.840196875" width="0.254" layer="1"/>
-<wire x1="40.8" y1="58.840196875" x2="40.8" y2="53.6" width="0.254" layer="1"/>
+<wire x1="40.8" y1="59.240196875" x2="40.8" y2="53.2" width="0.254" layer="1"/>
 <wire x1="38.1" y1="51.435" x2="39.035" y2="51.435" width="0.254" layer="1"/>
-<wire x1="39.035" y1="51.435" x2="40.8" y2="53.6" width="0.254" layer="1"/>
 <wire x1="38.1" y1="51.435" x2="39.42" y2="51.435" width="0.254" layer="16"/>
 <wire x1="39.42" y1="51.435" x2="40.15" y2="50.705" width="0.254" layer="16"/>
+<wire x1="40.8" y1="59.240196875" x2="38.98301875" y2="61.057178125" width="0.254" layer="1"/>
+<wire x1="39.035" y1="51.435" x2="40.8" y2="53.2" width="0.254" layer="1"/>
 </signal>
 <signal name="SS1WA">
 <contactref element="U1" pad="31"/>
@@ -3482,13 +3482,17 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <contactref element="SW1" pad="B"/>
 <contactref element="U1" pad="20"/>
 <wire x1="22.5" y1="54.75" x2="22.5" y2="61.19116875" width="0.254" layer="1"/>
-<wire x1="22.5" y1="61.19116875" x2="26.89149375" y2="65.5826625" width="0.254" layer="1"/>
+<wire x1="26.89149375" y1="65.5826625" x2="22.5" y2="61.19116875" width="0.254" layer="1"/>
 </signal>
 <signal name="S1A">
 <contactref element="SW1" pad="A"/>
-<contactref element="U1" pad="23"/>
-<wire x1="27.5" y1="54.75" x2="27.5" y2="62.79705625" width="0.254" layer="1"/>
-<wire x1="27.5" y1="62.79705625" x2="28.58855" y2="63.88560625" width="0.254" layer="1"/>
+<contactref element="U1" pad="21"/>
+<wire x1="27.457178125" y1="65.016978125" x2="27.416978125" y2="65.016978125" width="0.254" layer="1"/>
+<wire x1="27.5" y1="62.1" x2="27.5" y2="61.3402" width="0" layer="19" extent="1-16"/>
+<wire x1="27.5" y1="61.3402" x2="27.5" y2="54.75" width="0.254" layer="16"/>
+<wire x1="27.457178125" y1="65.016978125" x2="25.6402" y2="63.2" width="0.254" layer="1"/>
+<via x="25.6402" y="63.2" extent="1-16" drill="0.4" shape="octagon"/>
+<wire x1="25.6402" y1="63.2" x2="27.5" y2="61.3402" width="0.254" layer="16"/>
 </signal>
 <signal name="S1P">
 <contactref element="SW1" pad="E"/>
@@ -3974,21 +3978,21 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </signal>
 <signal name="!LANINT">
 <contactref element="U4" pad="4"/>
-<contactref element="U1" pad="21"/>
-<wire x1="27.457178125" y1="65.016978125" x2="23.7" y2="61.2598" width="0.254" layer="1"/>
-<wire x1="23.7" y1="61.2598" x2="23.7" y2="34.1" width="0.254" layer="1"/>
-<wire x1="23.7" y1="34.1" x2="21.39" y2="31.79" width="0.254" layer="16"/>
+<wire x1="23.8" y1="60.228425" x2="23.8" y2="34.2" width="0.254" layer="1"/>
+<wire x1="23.8" y1="34.2" x2="21.39" y2="31.79" width="0.254" layer="16"/>
 <wire x1="21.39" y1="31.79" x2="21.39" y2="30.78" width="0.254" layer="16"/>
-<via x="23.7" y="34.1" extent="1-16" drill="0.4" shape="octagon"/>
+<via x="23.8" y="34.2" extent="1-16" drill="0.4" shape="octagon"/>
+<contactref element="U1" pad="22"/>
+<wire x1="23.8" y1="60.228425" x2="28.022865625" y2="64.451290625" width="0.254" layer="1"/>
 </signal>
 <signal name="!LANCS">
 <contactref element="U4" pad="9"/>
-<contactref element="U1" pad="22"/>
-<wire x1="28.022865625" y1="64.451290625" x2="26.3" y2="62.728425" width="0.254" layer="1"/>
-<wire x1="26.3" y1="62.728425" x2="26.3" y2="33.3" width="0.254" layer="1"/>
+<wire x1="26.3" y1="61.59705625" x2="26.3" y2="33.3" width="0.254" layer="1"/>
 <wire x1="26.3" y1="33.3" x2="27.74" y2="31.86" width="0.254" layer="16"/>
 <via x="26.3" y="33.3" extent="1-16" drill="0.4" shape="octagon"/>
 <wire x1="27.74" y1="31.86" x2="27.74" y2="30.78" width="0.254" layer="16"/>
+<contactref element="U1" pad="23"/>
+<wire x1="26.3" y1="61.59705625" x2="28.58855" y2="63.88560625" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>

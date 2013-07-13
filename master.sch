@@ -12516,13 +12516,6 @@ DDEController.pdf</description>
 <label x="26.67" y="57.15" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="S1A" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PC7(SCK/TXD1/CLKO/EVO)"/>
-<wire x1="41.91" y1="49.53" x2="26.67" y2="49.53" width="0.1524" layer="91"/>
-<label x="26.67" y="49.53" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RTC_CE" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CE"/>
@@ -12618,18 +12611,25 @@ DDEController.pdf</description>
 <label x="26.67" y="59.69" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="!LANINT" class="0">
+<net name="S1A" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC5(OC1B/MOSI/XCK1)"/>
 <wire x1="41.91" y1="54.61" x2="26.67" y2="54.61" width="0.1524" layer="91"/>
 <label x="26.67" y="54.61" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="!LANCS" class="0">
+<net name="!LANINT" class="0">
 <segment>
 <label x="26.67" y="52.07" size="1.778" layer="95"/>
 <wire x1="26.67" y1="52.07" x2="41.91" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PC6(MISO/RXD1)"/>
+</segment>
+</net>
+<net name="!LANCS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC7(SCK/TXD1/CLKO/EVO)"/>
+<wire x1="41.91" y1="49.53" x2="26.67" y2="49.53" width="0.1524" layer="91"/>
+<label x="26.67" y="49.53" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
