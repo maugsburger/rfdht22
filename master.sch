@@ -11862,6 +11862,8 @@ DDEController.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="pwr" width="0.254" drill="0">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="UC"/>
@@ -12168,7 +12170,7 @@ DDEController.pdf</description>
 <label x="26.67" y="62.23" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <wire x1="77.47" y1="156.21" x2="80.01" y2="156.21" width="0.1524" layer="91"/>
 <wire x1="80.01" y1="152.4" x2="80.01" y2="156.21" width="0.1524" layer="91"/>
@@ -13004,7 +13006,7 @@ DDEController.pdf</description>
 <pinref part="S2" gate="G$1" pin="A1"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <wire x1="62.23" y1="153.67" x2="62.23" y2="158.75" width="0.1524" layer="91"/>
 <pinref part="LCD1" gate="G$1" pin="VDD"/>
