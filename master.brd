@@ -3136,7 +3136,6 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="-0.4" y="95.2"/>
 </polygon>
 <wire x1="15.15" y1="43.2" x2="15.15" y2="42.132" width="0.1524" layer="16"/>
-<wire x1="15.15" y1="42.132" x2="16.501" y2="40.781" width="0.1524" layer="16"/>
 <via x="35.2" y="68.8" extent="1-16" drill="0.3302" shape="octagon"/>
 <wire x1="37.2859625" y1="59.360121875" x2="36.246084375" y2="60.4" width="0.1524" layer="1"/>
 <wire x1="36.246084375" y1="60.4" x2="36" y2="60.4" width="0.1524" layer="1"/>
@@ -3206,25 +3205,25 @@ Please make sure your boards conform to these design rules.</description>
 <via x="50.8" y="65.6" extent="1-16" drill="0.3302" shape="octagon"/>
 <via x="41.6" y="58.8" extent="1-16" drill="0.3302" shape="octagon"/>
 </signal>
-<signal name="+5V">
+<signal name="+5V" class="1">
 <contactref element="C7" pad="1"/>
 <contactref element="X5" pad="VBUS"/>
 <contactref element="X9" pad="2"/>
-<wire x1="48.3" y1="56.8" x2="47.2" y2="56.8" width="0.1524" layer="1"/>
-<wire x1="47.2" y1="56.8" x2="46" y2="55.6" width="0.1524" layer="1"/>
+<wire x1="48.3" y1="56.8" x2="47.2" y2="56.8" width="0.254" layer="1"/>
+<wire x1="47.2" y1="56.8" x2="46" y2="55.6" width="0.254" layer="1"/>
 <via x="46" y="55.6" extent="1-16" drill="0.3302" shape="octagon"/>
-<wire x1="46" y1="55.6" x2="33.2" y2="55.6" width="0.1524" layer="16"/>
-<wire x1="33.2" y1="55.6" x2="30.4" y2="52.8" width="0.1524" layer="16"/>
-<wire x1="30.4" y1="52.8" x2="16" y2="52.8" width="0.1524" layer="16"/>
+<wire x1="46" y1="55.6" x2="33.2" y2="55.6" width="0.254" layer="16"/>
+<wire x1="33.2" y1="55.6" x2="30.4" y2="52.8" width="0.254" layer="16"/>
+<wire x1="30.4" y1="52.8" x2="16" y2="52.8" width="0.254" layer="16"/>
 <contactref element="IC2" pad="2"/>
-<wire x1="14" y1="46.05" x2="14" y2="51.2" width="0.1524" layer="16"/>
-<wire x1="14" y1="51.2" x2="15.6" y2="52.8" width="0.1524" layer="16"/>
-<wire x1="15.6" y1="52.8" x2="16" y2="52.8" width="0.1524" layer="16"/>
+<wire x1="14" y1="46.05" x2="14" y2="51.2" width="0.254" layer="16"/>
+<wire x1="14" y1="51.2" x2="15.6" y2="52.8" width="0.254" layer="16"/>
+<wire x1="15.6" y1="52.8" x2="16" y2="52.8" width="0.254" layer="16"/>
 <contactref element="IC2" pad="2@1"/>
-<wire x1="16.85" y1="43.2" x2="18" y2="42.05" width="0.1524" layer="16"/>
-<wire x1="18" y1="42.05" x2="18" y2="40.527" width="0.1524" layer="16"/>
-<wire x1="18" y1="40.527" x2="18" y2="37.86" width="0.1524" layer="16"/>
-<wire x1="14" y1="46.05" x2="16.85" y2="43.2" width="0.1524" layer="16"/>
+<wire x1="16.85" y1="43.2" x2="18" y2="42.05" width="0.254" layer="16"/>
+<wire x1="18" y1="42.05" x2="18" y2="40.527" width="0.254" layer="16"/>
+<wire x1="18" y1="40.527" x2="18" y2="37.86" width="0.254" layer="16"/>
+<wire x1="14" y1="46.05" x2="16.85" y2="43.2" width="0.254" layer="16"/>
 </signal>
 <signal name="DHTDATA">
 <contactref element="R2" pad="1"/>

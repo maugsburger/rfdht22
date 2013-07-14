@@ -12581,7 +12581,7 @@ DDEController.pdf</description>
 <wire x1="195.58" y1="92.71" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <wire x1="59.69" y1="156.21" x2="62.23" y2="156.21" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -13414,7 +13414,7 @@ DDEController.pdf</description>
 <junction x="91.44" y="76.2"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <wire x1="59.69" y1="128.27" x2="63.5" y2="128.27" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
