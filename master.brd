@@ -46,17 +46,17 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -136,6 +136,10 @@
 </polygon>
 <dimension x1="47" y1="5.25" x2="56.85" y2="6" x3="51.925" y3="35.6" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="47" y1="5.25" x2="61" y2="5.2" x3="54" y3="39.2" textsize="1.778" layer="47" dtype="horizontal"/>
+<text x="8.8" y="5.2" size="1.778" layer="21" font="vector">&gt;BN</text>
+<text x="17.2" y="82.4" size="1.778" layer="16" font="vector" ratio="10" rot="MR0">&gt;BN</text>
+<text x="17.2" y="84.8" size="1.778" layer="16" font="vector" ratio="10" rot="MR0">&gt;BR</text>
+<text x="8.8" y="2.8" size="1.778" layer="21">&gt;BR</text>
 </plain>
 <libraries>
 <library name="avr-7">
@@ -2411,8 +2415,185 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </package>
 </packages>
 </library>
+<library name="creative-commons">
+<packages>
+<package name="CC_TOP_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="CC_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="BY_TOP_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="BY_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TOP_HS">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="1.35" y="2.1"/>
+<vertex x="2" y="2.1" curve="90"/>
+<vertex x="2.45" y="1.65"/>
+<vertex x="2.55" y="1.65" curve="85.004066"/>
+<vertex x="3.125" y="2.3"/>
+<vertex x="3.125" y="2.6" curve="85.001192"/>
+<vertex x="2.625" y="3.3"/>
+<vertex x="2.55" y="3.3" curve="90"/>
+<vertex x="2" y="2.85"/>
+<vertex x="2.2" y="2.85"/>
+<vertex x="1.7" y="2.35"/>
+<vertex x="1.65" y="2.35"/>
+<vertex x="1.15" y="2.85"/>
+<vertex x="1.4" y="2.85" curve="-90"/>
+<vertex x="2.35" y="3.8"/>
+<vertex x="2.625" y="3.8" curve="-90"/>
+<vertex x="3.725" y="2.6"/>
+<vertex x="3.725" y="2.375" curve="-94.996202"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.35" y="1.1" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.35" y="2.1"/>
+<vertex x="2" y="2.1" curve="90"/>
+<vertex x="2.45" y="1.65"/>
+<vertex x="2.55" y="1.65" curve="85.004066"/>
+<vertex x="3.125" y="2.3"/>
+<vertex x="3.125" y="2.6" curve="85.001192"/>
+<vertex x="2.625" y="3.3"/>
+<vertex x="2.55" y="3.3" curve="90"/>
+<vertex x="2" y="2.85"/>
+<vertex x="2.2" y="2.85"/>
+<vertex x="1.7" y="2.35"/>
+<vertex x="1.65" y="2.35"/>
+<vertex x="1.15" y="2.85"/>
+<vertex x="1.4" y="2.85" curve="-90"/>
+<vertex x="2.35" y="3.8"/>
+<vertex x="2.625" y="3.8" curve="-90"/>
+<vertex x="3.725" y="2.6"/>
+<vertex x="3.725" y="2.375" curve="-94.996202"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.35" y="1.1" curve="-90"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
+<attribute name="BN" value="rf master"/>
+<attribute name="BR" value="rev0a"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -2422,7 +2603,7 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <class number="1" name="pwr" width="0.254" drill="0">
 </class>
 </classes>
-<designrules name="oshpark *">
+<designrules name="oshpark">
 <description language="de">&lt;a href=&quot;http://oshpark.com/guidelines&quot;&gt;http://oshpark.com/guidelines&lt;/a&gt;</description>
 <description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
@@ -2489,7 +2670,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
@@ -2880,6 +3061,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="50.73" y="35.435" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="49.06" y="32.965" size="1.27" layer="28" rot="MR90"/>
 </element>
+<element name="U$1" library="creative-commons" package="CC_TPLACE_HS" value="CC-TPLACE-HALF" x="8.8" y="7.6"/>
+<element name="U$2" library="creative-commons" package="BY_TPLACE_HS" value="BY-TPLACE-HS" x="14.4" y="7.6"/>
+<element name="U$7" library="creative-commons" package="SA_TPLACE_HS" value="SA-TPLACE-HALF" x="20" y="7.6"/>
+<element name="U$8" library="creative-commons" package="CC_TOP_HS" value="CC-TOP-HALF" x="22.4" y="88.8" rot="MR0"/>
+<element name="U$9" library="creative-commons" package="BY_TOP_HS" value="BY-TOP-HALF" x="17.2" y="88.8" rot="MR0"/>
+<element name="U$10" library="creative-commons" package="SA_TOP_HS" value="SA-TOP-HALF" x="12" y="88.8" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
@@ -2929,7 +3116,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IC2" pad="1"/>
 <polygon width="0.1524" layer="16">
 <vertex x="13.2" y="14.4"/>
-<vertex x="13.2" y="94.8"/>
+<vertex x="13.2" y="80.8"/>
+<vertex x="-0.4" y="80.8"/>
+<vertex x="-0.4" y="94.8"/>
 <vertex x="56.4" y="94.8"/>
 <vertex x="56.4" y="0"/>
 <vertex x="28" y="0"/>
@@ -2942,6 +3131,9 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="28" y="-0.4"/>
 <vertex x="28" y="14.4"/>
 <vertex x="13.2" y="14.4"/>
+<vertex x="13.2" y="80.8"/>
+<vertex x="-0.4" y="80.8"/>
+<vertex x="-0.4" y="95.2"/>
 </polygon>
 <wire x1="15.15" y1="43.2" x2="15.15" y2="42.132" width="0.1524" layer="16"/>
 <wire x1="15.15" y1="42.132" x2="16.501" y2="40.781" width="0.1524" layer="16"/>
@@ -3993,6 +4185,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.3" y1="61.59705625" x2="28.58855" y2="63.88560625" width="0.1524" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,16,8e5f722d53f01113"/>
+<approved hash="3,16,5f59a32bbacf9595"/>
+<approved hash="3,16,543d563f563f543d"/>
+<approved hash="3,16,71f073f273f271f0"/>
+<approved hash="3,16,2f7b2d792d792f7b"/>
+</errors>
 </board>
 </drawing>
 </eagle>

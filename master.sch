@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
-<layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tPadExt" color="7" fill="1" visible="yes" active="no"/>
+<layer number="54" name="bPadExt" color="1" fill="1" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -73,13 +73,6 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
@@ -96,7 +89,6 @@
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -11854,6 +11846,458 @@ DDEController.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="creative-commons">
+<packages>
+<package name="CC_TOP">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="7.25" y="4.55" curve="-55.001443"/>
+<vertex x="6.6" y="4.1" curve="-99.997093"/>
+<vertex x="5.95" y="4.8"/>
+<vertex x="5.95" y="5.2" curve="-90"/>
+<vertex x="6.55" y="5.85" curve="-67.380135"/>
+<vertex x="7.15" y="5.45"/>
+<vertex x="7.8" y="5.8" curve="60.001456"/>
+<vertex x="6.55" y="6.55"/>
+<vertex x="6.5" y="6.55" curve="90.03162"/>
+<vertex x="5.05" y="5.2"/>
+<vertex x="5.05" y="4.85" curve="90.007903"/>
+<vertex x="6.45" y="3.4"/>
+<vertex x="6.65" y="3.4" curve="69.999297"/>
+<vertex x="7.85" y="4.25"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="4.35" y="4.55" curve="-55.001443"/>
+<vertex x="3.7" y="4.1" curve="-99.997093"/>
+<vertex x="3.05" y="4.8"/>
+<vertex x="3.05" y="5.2" curve="-90"/>
+<vertex x="3.65" y="5.85" curve="-67.380135"/>
+<vertex x="4.25" y="5.45"/>
+<vertex x="4.9" y="5.8" curve="60.001456"/>
+<vertex x="3.65" y="6.55"/>
+<vertex x="3.6" y="6.55" curve="90.03162"/>
+<vertex x="2.15" y="5.2"/>
+<vertex x="2.15" y="4.85" curve="90.007903"/>
+<vertex x="3.55" y="3.4"/>
+<vertex x="3.75" y="3.4" curve="69.999297"/>
+<vertex x="4.95" y="4.25"/>
+</polygon>
+</package>
+<package name="CC_TPLACE">
+<description>&lt;h2&gt;tPlace layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="7.25" y="4.55" curve="-55.001443"/>
+<vertex x="6.6" y="4.1" curve="-99.997093"/>
+<vertex x="5.95" y="4.8"/>
+<vertex x="5.95" y="5.2" curve="-90"/>
+<vertex x="6.55" y="5.85" curve="-67.380135"/>
+<vertex x="7.15" y="5.45"/>
+<vertex x="7.8" y="5.8" curve="60.001456"/>
+<vertex x="6.55" y="6.55"/>
+<vertex x="6.5" y="6.55" curve="90.03162"/>
+<vertex x="5.05" y="5.2"/>
+<vertex x="5.05" y="4.85" curve="90.007903"/>
+<vertex x="6.45" y="3.4"/>
+<vertex x="6.65" y="3.4" curve="69.999297"/>
+<vertex x="7.85" y="4.25"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="4.35" y="4.55" curve="-55.001443"/>
+<vertex x="3.7" y="4.1" curve="-99.997093"/>
+<vertex x="3.05" y="4.8"/>
+<vertex x="3.05" y="5.2" curve="-90"/>
+<vertex x="3.65" y="5.85" curve="-67.380135"/>
+<vertex x="4.25" y="5.45"/>
+<vertex x="4.9" y="5.8" curve="60.001456"/>
+<vertex x="3.65" y="6.55"/>
+<vertex x="3.6" y="6.55" curve="90.03162"/>
+<vertex x="2.15" y="5.2"/>
+<vertex x="2.15" y="4.85" curve="90.007903"/>
+<vertex x="3.55" y="3.4"/>
+<vertex x="3.75" y="3.4" curve="69.999297"/>
+<vertex x="4.95" y="4.25"/>
+</polygon>
+</package>
+<package name="CC_TOP_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="CC_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.175" y="2.275" curve="-55.001443"/>
+<vertex x="1.85" y="2.05" curve="-99.997093"/>
+<vertex x="1.525" y="2.4"/>
+<vertex x="1.525" y="2.6" curve="-90"/>
+<vertex x="1.825" y="2.925" curve="-67.380135"/>
+<vertex x="2.125" y="2.725"/>
+<vertex x="2.45" y="2.9" curve="60.001456"/>
+<vertex x="1.825" y="3.275"/>
+<vertex x="1.8" y="3.275" curve="90.03162"/>
+<vertex x="1.075" y="2.6"/>
+<vertex x="1.075" y="2.425" curve="90.007903"/>
+<vertex x="1.775" y="1.7"/>
+<vertex x="1.875" y="1.7" curve="69.999297"/>
+<vertex x="2.475" y="2.125"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.625" y="2.275" curve="-55.001443"/>
+<vertex x="3.3" y="2.05" curve="-99.997093"/>
+<vertex x="2.975" y="2.4"/>
+<vertex x="2.975" y="2.6" curve="-90"/>
+<vertex x="3.275" y="2.925" curve="-67.380135"/>
+<vertex x="3.575" y="2.725"/>
+<vertex x="3.9" y="2.9" curve="60.001456"/>
+<vertex x="3.275" y="3.275"/>
+<vertex x="3.25" y="3.275" curve="90.03162"/>
+<vertex x="2.525" y="2.6"/>
+<vertex x="2.525" y="2.425" curve="90.007903"/>
+<vertex x="3.225" y="1.7"/>
+<vertex x="3.325" y="1.7" curve="69.999297"/>
+<vertex x="3.925" y="2.125"/>
+</polygon>
+</package>
+<package name="BY_TOP">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="3.65" y="4.2"/>
+<vertex x="4.2" y="4.2"/>
+<vertex x="4.2" y="1.75"/>
+<vertex x="5.8" y="1.75"/>
+<vertex x="5.8" y="4.15"/>
+<vertex x="6.35" y="4.15"/>
+<vertex x="6.35" y="6.3" curve="90"/>
+<vertex x="6.1" y="6.55"/>
+<vertex x="3.9" y="6.55" curve="90"/>
+<vertex x="3.65" y="6.3"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="5" y="8.2"/>
+<vertex x="5.1" y="8.2" curve="-90"/>
+<vertex x="5.7" y="7.6"/>
+<vertex x="5.7" y="7.4" curve="-90"/>
+<vertex x="5.1" y="6.8"/>
+<vertex x="5" y="6.8"/>
+<vertex x="4.9" y="6.8" curve="-90"/>
+<vertex x="4.3" y="7.4"/>
+<vertex x="4.3" y="7.6" curve="-90"/>
+<vertex x="4.9" y="8.2"/>
+</polygon>
+</package>
+<package name="BY_TPLACE">
+<description>&lt;h2&gt;tPlace layer&lt;/h2&gt;</description>
+<circle x="5" y="5" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="3.65" y="4.2"/>
+<vertex x="4.2" y="4.2"/>
+<vertex x="4.2" y="1.75"/>
+<vertex x="5.8" y="1.75"/>
+<vertex x="5.8" y="4.15"/>
+<vertex x="6.35" y="4.15"/>
+<vertex x="6.35" y="6.3" curve="90"/>
+<vertex x="6.1" y="6.55"/>
+<vertex x="3.9" y="6.55" curve="90"/>
+<vertex x="3.65" y="6.3"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="5" y="8.2"/>
+<vertex x="5.1" y="8.2" curve="-90"/>
+<vertex x="5.7" y="7.6"/>
+<vertex x="5.7" y="7.4" curve="-90"/>
+<vertex x="5.1" y="6.8"/>
+<vertex x="5" y="6.8"/>
+<vertex x="4.9" y="6.8" curve="-90"/>
+<vertex x="4.3" y="7.4"/>
+<vertex x="4.3" y="7.6" curve="-90"/>
+<vertex x="4.9" y="8.2"/>
+</polygon>
+</package>
+<package name="BY_TOP_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="BY_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.825" y="2.1"/>
+<vertex x="2.1" y="2.1"/>
+<vertex x="2.1" y="0.875"/>
+<vertex x="2.9" y="0.875"/>
+<vertex x="2.9" y="2.075"/>
+<vertex x="3.175" y="2.075"/>
+<vertex x="3.175" y="3.15" curve="90"/>
+<vertex x="3.05" y="3.275"/>
+<vertex x="1.95" y="3.275" curve="90"/>
+<vertex x="1.825" y="3.15"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="2.45" y="4.1"/>
+<vertex x="2.55" y="4.1" curve="-90"/>
+<vertex x="2.85" y="3.8"/>
+<vertex x="2.85" y="3.7" curve="-90"/>
+<vertex x="2.55" y="3.4"/>
+<vertex x="2.45" y="3.4" curve="-90"/>
+<vertex x="2.15" y="3.7"/>
+<vertex x="2.15" y="3.8" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TOP">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="5" y="4.9" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.7" y="4.2"/>
+<vertex x="4" y="4.2" curve="90"/>
+<vertex x="4.9" y="3.3"/>
+<vertex x="5.1" y="3.3" curve="85.004066"/>
+<vertex x="6.25" y="4.6"/>
+<vertex x="6.25" y="5.2" curve="85.001192"/>
+<vertex x="5.25" y="6.6"/>
+<vertex x="5.1" y="6.6" curve="90"/>
+<vertex x="4" y="5.7"/>
+<vertex x="4.4" y="5.7"/>
+<vertex x="3.4" y="4.7"/>
+<vertex x="3.3" y="4.7"/>
+<vertex x="2.3" y="5.7"/>
+<vertex x="2.8" y="5.7" curve="-90"/>
+<vertex x="4.7" y="7.6"/>
+<vertex x="5.25" y="7.6" curve="-90"/>
+<vertex x="7.45" y="5.2"/>
+<vertex x="7.45" y="4.75" curve="-94.996202"/>
+<vertex x="5" y="2.2"/>
+<vertex x="4.7" y="2.2" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TPLACE">
+<description>&lt;h2&gt;tPlace layer&lt;/h2&gt;</description>
+<circle x="5" y="4.9" radius="4.5" width="1" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="2.7" y="4.2"/>
+<vertex x="4" y="4.2" curve="90"/>
+<vertex x="4.9" y="3.3"/>
+<vertex x="5.1" y="3.3" curve="85.004066"/>
+<vertex x="6.25" y="4.6"/>
+<vertex x="6.25" y="5.2" curve="85.001192"/>
+<vertex x="5.25" y="6.6"/>
+<vertex x="5.1" y="6.6" curve="90"/>
+<vertex x="4" y="5.7"/>
+<vertex x="4.4" y="5.7"/>
+<vertex x="3.4" y="4.7"/>
+<vertex x="3.3" y="4.7"/>
+<vertex x="2.3" y="5.7"/>
+<vertex x="2.8" y="5.7" curve="-90"/>
+<vertex x="4.7" y="7.6"/>
+<vertex x="5.25" y="7.6" curve="-90"/>
+<vertex x="7.45" y="5.2"/>
+<vertex x="7.45" y="4.75" curve="-94.996202"/>
+<vertex x="5" y="2.2"/>
+<vertex x="4.7" y="2.2" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TOP_HS">
+<description>&lt;h2&gt;Top layer&lt;/h2&gt;</description>
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="1.35" y="2.1"/>
+<vertex x="2" y="2.1" curve="90"/>
+<vertex x="2.45" y="1.65"/>
+<vertex x="2.55" y="1.65" curve="85.004066"/>
+<vertex x="3.125" y="2.3"/>
+<vertex x="3.125" y="2.6" curve="85.001192"/>
+<vertex x="2.625" y="3.3"/>
+<vertex x="2.55" y="3.3" curve="90"/>
+<vertex x="2" y="2.85"/>
+<vertex x="2.2" y="2.85"/>
+<vertex x="1.7" y="2.35"/>
+<vertex x="1.65" y="2.35"/>
+<vertex x="1.15" y="2.85"/>
+<vertex x="1.4" y="2.85" curve="-90"/>
+<vertex x="2.35" y="3.8"/>
+<vertex x="2.625" y="3.8" curve="-90"/>
+<vertex x="3.725" y="2.6"/>
+<vertex x="3.725" y="2.375" curve="-94.996202"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.35" y="1.1" curve="-90"/>
+</polygon>
+</package>
+<package name="SA_TPLACE_HS">
+<circle x="2.5" y="2.5" radius="2.25" width="0.5" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="1.35" y="2.1"/>
+<vertex x="2" y="2.1" curve="90"/>
+<vertex x="2.45" y="1.65"/>
+<vertex x="2.55" y="1.65" curve="85.004066"/>
+<vertex x="3.125" y="2.3"/>
+<vertex x="3.125" y="2.6" curve="85.001192"/>
+<vertex x="2.625" y="3.3"/>
+<vertex x="2.55" y="3.3" curve="90"/>
+<vertex x="2" y="2.85"/>
+<vertex x="2.2" y="2.85"/>
+<vertex x="1.7" y="2.35"/>
+<vertex x="1.65" y="2.35"/>
+<vertex x="1.15" y="2.85"/>
+<vertex x="1.4" y="2.85" curve="-90"/>
+<vertex x="2.35" y="3.8"/>
+<vertex x="2.625" y="3.8" curve="-90"/>
+<vertex x="3.725" y="2.6"/>
+<vertex x="3.725" y="2.375" curve="-94.996202"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.35" y="1.1" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="CC">
+<text x="0" y="0" size="1.778" layer="94">CC</text>
+</symbol>
+<symbol name="BY">
+<text x="0" y="0" size="1.778" layer="94">BY</text>
+</symbol>
+<symbol name="SA">
+<text x="0" y="0" size="1.778" layer="94">SA</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CC">
+<description>&lt;h1&gt;creatice commons - CC&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="CC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TOP" package="CC_TOP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE" package="CC_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TOP-HALF" package="CC_TOP_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE-HALF" package="CC_TPLACE_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BY">
+<description>&lt;h1&gt;creative commons &lt;p&gt;Attribution - BY&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="BY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TOP" package="BY_TOP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE" package="BY_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TOP-HALF" package="BY_TOP_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE-HS" package="BY_TPLACE_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SA">
+<description>&lt;h1&gt;creative commons &lt;p&gt;ShareAlike  - SA&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="SA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TOP" package="SA_TOP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE" package="SA_TPLACE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TOP-HALF" package="SA_TOP_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TPLACE-HALF" package="SA_TPLACE_HS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11986,6 +12430,12 @@ DDEController.pdf</description>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="U$1" library="creative-commons" deviceset="CC" device="-TPLACE-HALF" value="CC-TPLACE-HALF"/>
+<part name="U$2" library="creative-commons" deviceset="BY" device="-TPLACE-HS" value="BY-TPLACE-HS"/>
+<part name="U$7" library="creative-commons" deviceset="SA" device="-TPLACE-HALF" value="SA-TPLACE-HALF"/>
+<part name="U$8" library="creative-commons" deviceset="CC" device="-TOP-HALF" value="CC-TOP-HALF"/>
+<part name="U$9" library="creative-commons" deviceset="BY" device="-TOP-HALF" value="BY-TOP-HALF"/>
+<part name="U$10" library="creative-commons" deviceset="SA" device="-TOP-HALF" value="SA-TOP-HALF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12025,6 +12475,12 @@ DDEController.pdf</description>
 <instance part="GND15" gate="1" x="205.74" y="87.63"/>
 <instance part="C12" gate="G$1" x="195.58" y="106.68" rot="MR0"/>
 <instance part="C14" gate="G$1" x="241.3" y="139.7"/>
+<instance part="U$1" gate="G$1" x="217.17" y="20.32"/>
+<instance part="U$2" gate="G$1" x="222.25" y="20.32"/>
+<instance part="U$7" gate="G$1" x="227.33" y="20.32"/>
+<instance part="U$8" gate="G$1" x="233.68" y="20.32"/>
+<instance part="U$9" gate="G$1" x="238.76" y="20.32"/>
+<instance part="U$10" gate="G$1" x="243.84" y="20.32"/>
 </instances>
 <busses>
 </busses>
