@@ -13199,7 +13199,7 @@ DDEController.pdf</description>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="GND6" gate="1" x="99.06" y="129.54"/>
+<instance part="GND6" gate="1" x="101.6" y="129.54"/>
 <instance part="SG1" gate="G$1" x="121.92" y="160.02"/>
 <instance part="P+8" gate="1" x="63.5" y="132.08" rot="MR0"/>
 <instance part="LED1" gate="G$1" x="121.92" y="151.13" rot="R90">
@@ -13341,11 +13341,12 @@ DDEController.pdf</description>
 <junction x="73.66" y="133.35"/>
 <wire x1="73.66" y1="133.35" x2="86.36" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="132.08" x2="99.06" y2="133.35" width="0.1524" layer="91"/>
-<junction x="99.06" y="133.35"/>
+<wire x1="101.6" y1="132.08" x2="101.6" y2="133.35" width="0.1524" layer="91"/>
+<junction x="101.6" y="133.35"/>
 <pinref part="D1" gate="G$1" pin="C2"/>
-<wire x1="86.36" y1="133.35" x2="99.06" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="133.35" x2="99.06" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="133.35" x2="101.6" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="133.35" x2="101.6" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="143.51" x2="99.06" y2="143.51" width="0.1524" layer="91"/>
 <junction x="86.36" y="133.35"/>
 <pinref part="LCD1" gate="G$1" pin="VSS"/>
 <pinref part="X6" gate="-1" pin="P$1"/>
