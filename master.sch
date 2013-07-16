@@ -13230,9 +13230,9 @@ DDEController.pdf</description>
 <instance part="X6" gate="-1" x="86.36" y="130.81" rot="R270"/>
 <instance part="X6" gate="-2" x="64.77" y="153.67"/>
 <instance part="X6" gate="-3" x="86.36" y="146.05" rot="R90"/>
-<instance part="X7" gate="-1" x="17.78" y="153.67" rot="R180"/>
-<instance part="X7" gate="-2" x="17.78" y="151.13" rot="R180"/>
-<instance part="X7" gate="-3" x="17.78" y="148.59" rot="R180"/>
+<instance part="X7" gate="-1" x="20.32" y="153.67" rot="R180"/>
+<instance part="X7" gate="-2" x="20.32" y="151.13" rot="R180"/>
+<instance part="X7" gate="-3" x="20.32" y="148.59" rot="R180"/>
 <instance part="LCD1" gate="G$1" x="46.99" y="140.97"/>
 <instance part="X8" gate="-1" x="20.32" y="133.35" rot="R180"/>
 <instance part="X8" gate="-2" x="20.32" y="130.81" rot="R180"/>
@@ -13683,7 +13683,7 @@ DDEController.pdf</description>
 </net>
 <net name="LCD_RS" class="0">
 <segment>
-<wire x1="20.32" y1="153.67" x2="34.29" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="153.67" x2="34.29" y2="153.67" width="0.1524" layer="91"/>
 <label x="22.86" y="153.67" size="1.778" layer="95"/>
 <pinref part="LCD1" gate="G$1" pin="RS"/>
 <pinref part="X7" gate="-1" pin="P$1"/>
@@ -13691,7 +13691,7 @@ DDEController.pdf</description>
 </net>
 <net name="LCR_RW" class="0">
 <segment>
-<wire x1="20.32" y1="151.13" x2="34.29" y2="151.13" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="151.13" x2="34.29" y2="151.13" width="0.1524" layer="91"/>
 <label x="22.86" y="151.13" size="1.778" layer="95"/>
 <pinref part="LCD1" gate="G$1" pin="R/W"/>
 <pinref part="X7" gate="-2" pin="P$1"/>
@@ -13699,7 +13699,7 @@ DDEController.pdf</description>
 </net>
 <net name="LCD_E" class="0">
 <segment>
-<wire x1="34.29" y1="148.59" x2="20.32" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="148.59" x2="22.86" y2="148.59" width="0.1524" layer="91"/>
 <label x="22.86" y="148.59" size="1.778" layer="95"/>
 <pinref part="LCD1" gate="G$1" pin="E"/>
 <pinref part="X7" gate="-3" pin="P$1"/>

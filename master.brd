@@ -28,12 +28,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -46,14 +46,14 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -2884,7 +2884,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="LED1" library="led" package="LED5MM" value="RED" x="30.4" y="86.4" locked="yes" smashed="yes" rot="R90">
 <attribute name="I" value="2mA" x="30.4" y="86.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="U_F" value="2V" x="30.4" y="86.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.8666" y="89.575" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="28.175" y="89.2334" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="32.2034" y="89.6004" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R4" library="rcl" package="R0603" value="510" x="28.4" y="86.8" smashed="yes" rot="MR270">
@@ -2894,7 +2894,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="LED2" library="led" package="LED5MM" value="GREEN" x="19.6" y="86.4" locked="yes" smashed="yes" rot="R90">
 <attribute name="I" value="2.2mA" x="25.315" y="86.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="U_F" value="2V2" x="25.315" y="86.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="19.0666" y="89.575" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="17.575" y="89.3334" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="21.4034" y="89.6004" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R5" library="rcl" package="R0603" value="470" x="21.6" y="86.8" smashed="yes" rot="MR270">
@@ -2917,11 +2917,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MF" value="" x="54.4" y="70.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="54.4" y="70.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_REICHELT" value="0,032768-L6" x="54.4" y="70.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="45.803003125" y="69.63199375" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="51.53199375" y="72.696996875" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="52.368003125" y="73.466996875" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U1" library="avr-7" package="TQFP64" value="XMEGA-A3TQFP" x="35.2" y="68.8" smashed="yes" rot="R315">
-<attribute name="NAME" x="38.028425" y="79.548021875" size="1.27" layer="25" rot="R315"/>
+<attribute name="NAME" x="31.251978125" y="78.428425" size="1.27" layer="25" rot="R45"/>
 <attribute name="VALUE" x="29.3718125" y="71.95206875" size="1.27" layer="27" rot="R315"/>
 </element>
 <element name="C4" library="rcl" package="C0603" value="100n" x="45.6" y="64" smashed="yes" rot="R225">
@@ -2929,7 +2929,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="44.791775" y="66.0654625" size="1.27" layer="27" rot="R225"/>
 </element>
 <element name="C5" library="rcl" package="C0603" value="100n" x="45" y="73.8" smashed="yes" rot="R315">
-<attribute name="NAME" x="46.4" y="77.2" size="1.27" layer="25" rot="R225"/>
+<attribute name="NAME" x="43.2" y="74.3" size="1.27" layer="25" rot="R45"/>
 <attribute name="VALUE" x="42.93454375" y="72.991775" size="1.27" layer="27" rot="R315"/>
 </element>
 <element name="C3" library="rcl" package="C0603" value="100n" x="38.6" y="57.4" smashed="yes" rot="R225">
@@ -2945,7 +2945,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="35.151" y="73.581" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="C6" library="rcl" package="C0603" value="100n" x="41" y="78.2" smashed="yes" rot="R315">
-<attribute name="NAME" x="41.3102" y="80.16743125" size="1.27" layer="25" rot="R315"/>
+<attribute name="NAME" x="40.9102" y="79.76743125" size="1.27" layer="25" rot="R315"/>
 <attribute name="VALUE" x="38.93454375" y="77.391775" size="1.27" layer="27" rot="R315"/>
 </element>
 <element name="PDI" library="avr-7" package="AVR-ISP-6" value="AVR-PDIVERT" x="50.8" y="81.28" smashed="yes" rot="MR0">
@@ -3023,7 +3023,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="49.181003125" y="72.704996875" size="0.4064" layer="28" rot="MR270"/>
 </element>
 <element name="S1" library="switch-alps" package="ALPS_EC11E_SW" value="EC11E_SW" x="25" y="47.25" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.4" y="40.8" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="26.4" y="40.4" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="21.5" y="56.25" size="1.27" layer="27"/>
 </element>
 <element name="X6" library="con_PS25" package="PS25_3" value="PS25_3W-R" x="16" y="76.8" smashed="yes" rot="MR270">
@@ -4263,29 +4263,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.213559375" y1="87.88950625" x2="11.71583125" y2="86.676915625" width="0.25" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,16,8e5f722d53f01113"/>
-<approved hash="3,16,5f59a32bbacf9595"/>
-<approved hash="3,16,543d563f563f543d"/>
-<approved hash="3,16,71f073f273f271f0"/>
-<approved hash="3,16,2f7b2d792d792f7b"/>
-<approved hash="8,1,729945289f4874f3"/>
-<approved hash="8,1,2b11334e6ec62d0c"/>
-<approved hash="8,1,4b1c534226d4b28c"/>
-<approved hash="8,1,a9b238bc4970408c"/>
-<approved hash="8,1,23726c0939a81e6a"/>
-<approved hash="8,1,79c89ff92def6e28"/>
-<approved hash="8,1,8bd5421cc9e3b0bb"/>
-<approved hash="8,1,13784be229df99d9"/>
-<approved hash="8,1,eb2ad72feff58231"/>
-<approved hash="8,1,7e1229c42e6c1200"/>
-<approved hash="8,1,25c8264a31f8c9f8"/>
-<approved hash="8,1,d3b636683d0837a0"/>
-<approved hash="8,1,14e423162bb844dc"/>
-<approved hash="8,1,f6f7ef46c615f799"/>
-<approved hash="8,1,10506c8040084971"/>
-<approved hash="8,1,78b45d447548f108"/>
-</errors>
 </board>
 </drawing>
 </eagle>
