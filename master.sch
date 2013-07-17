@@ -12483,6 +12483,7 @@ DDEController.pdf</description>
 <part name="P+21" library="supply1" deviceset="VCC" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -12538,6 +12539,7 @@ DDEController.pdf</description>
 <instance part="P+21" gate="VCC" x="128.27" y="163.83"/>
 <instance part="GND26" gate="1" x="128.27" y="140.97"/>
 <instance part="GND27" gate="1" x="147.32" y="140.97"/>
+<instance part="C24" gate="G$1" x="247.65" y="152.4" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -12623,6 +12625,10 @@ DDEController.pdf</description>
 <wire x1="241.3" y1="134.62" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
 <junction x="223.52" y="134.62"/>
 <pinref part="C14" gate="G$1" pin="P$2"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="134.62" x2="247.65" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="247.65" y1="134.62" x2="247.65" y2="147.32" width="0.1524" layer="91"/>
+<junction x="241.3" y="134.62"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="VSS"/>
@@ -12769,6 +12775,9 @@ DDEController.pdf</description>
 <wire x1="238.76" y1="154.94" x2="240.03" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="240.03" y1="154.94" x2="240.03" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="247.65" y1="154.94" x2="240.03" y2="154.94" width="0.1524" layer="91"/>
+<junction x="240.03" y="154.94"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="VCC"/>
