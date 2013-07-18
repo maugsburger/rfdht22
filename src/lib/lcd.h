@@ -6,6 +6,7 @@
  File:	    $Id: lcd.h,v 1.13.2.2 2006/01/30 19:51:33 peter Exp $
  Software:  AVR-GCC 3.3
  Hardware:  any AVR device, memory mapped mode only for AT90S4414/8515/Mega
+ License:   open source under the GNU GPL license
 ***************************************************************************/
 
 /**

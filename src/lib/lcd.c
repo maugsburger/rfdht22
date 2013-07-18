@@ -4,6 +4,7 @@
  File:	    $Id: lcd.c,v 1.14.2.2 2012/02/12 07:51:00 peter Exp $
  Software:  AVR-GCC 3.3 
  Target:    any AVR device, memory mapped mode only for AT90S4414/8515/Mega
+ License:   open source under the GNU GPL license
 
  DESCRIPTION
        Basic routines for interfacing a HD44780U-based text lcd display
