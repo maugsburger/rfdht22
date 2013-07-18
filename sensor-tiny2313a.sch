@@ -11494,7 +11494,6 @@ DDEController.pdf</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
-<part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="IC1" library="avr-7" deviceset="TINY2313*" device="-*S*" value="TINY2313-*S*"/>
 <part name="U$2" library="strapubox" deviceset="SP6029" device="TOP"/>
 <part name="M1" library="modules" deviceset="NRF24L01P-M" device=""/>
@@ -12131,46 +12130,7 @@ DDEController.pdf</description>
 </net>
 </nets>
 </sheet>
-<sheet>
-<plain>
-<wire x1="162.6" y1="55.6" x2="206.4" y2="55.6" width="0.4064" layer="97"/>
-<wire x1="206.4" y1="55.6" x2="206.4" y2="131.4" width="0.4064" layer="97"/>
-<wire x1="206.4" y1="131.4" x2="162.6" y2="131.4" width="0.4064" layer="97"/>
-<wire x1="162.6" y1="131.4" x2="162.6" y2="55.6" width="0.4064" layer="97"/>
-<circle x="172" y="64.5" radius="4" width="0.4064" layer="97"/>
-<circle x="197" y="64.5" radius="4" width="0.4064" layer="97"/>
-<circle x="172" y="122.5" radius="4" width="0.4064" layer="97"/>
-<circle x="197" y="122.5" radius="4" width="0.4064" layer="97"/>
-<rectangle x1="55" y1="38" x2="105" y2="52" layer="97" rot="R270"/>
-<rectangle x1="69" y1="38" x2="119" y2="52" layer="97" rot="R90"/>
-<rectangle x1="26" y1="8" x2="41" y2="33" layer="97" rot="R180"/>
-<rectangle x1="39.5" y1="57" x2="53.5" y2="90" layer="97" rot="R180"/>
-<wire x1="12.1" y1="7.1" x2="55.9" y2="7.1" width="0.4064" layer="97"/>
-<wire x1="55.9" y1="7.1" x2="55.9" y2="100.9" width="0.4064" layer="97"/>
-<wire x1="55.9" y1="100.9" x2="12.1" y2="100.9" width="0.4064" layer="97"/>
-<wire x1="12.1" y1="100.9" x2="12.1" y2="7.1" width="0.4064" layer="97"/>
-<circle x="50.5" y="12.5" radius="4.5" width="0.4064" layer="97"/>
-<circle x="17.5" y="95.5" radius="4.5" width="0.4064" layer="97"/>
-<circle x="17.5" y="12.5" radius="4.5" width="0.4064" layer="97"/>
-<circle x="50.5" y="95.5" radius="4.5" width="0.4064" layer="97"/>
-<circle x="20" y="21" radius="4" width="0.4064" layer="97"/>
-<circle x="48" y="21" radius="4" width="0.4064" layer="97"/>
-<circle x="20" y="87" radius="4" width="0.4064" layer="97"/>
-<circle x="48" y="87" radius="4" width="0.4064" layer="97"/>
-<rectangle x1="13" y1="33" x2="37.5" y2="87" layer="97"/>
-</plain>
-<instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
 </sheets>
-<errors>
-<approved hash="111,1,171.45,96.52,+5V,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
