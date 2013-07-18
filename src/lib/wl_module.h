@@ -1,4 +1,5 @@
 /*
+    Copyright (c) 2013 Moritz Augsburger <code@moritz.augsburger.name>
 	Copyright (c) 2011 by Ernst Buchmann 
 	
 	Code based on the work of Stefan Engelke and Brennan Ball

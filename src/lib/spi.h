@@ -1,4 +1,5 @@
 /*
+    Copyright (c) 2013 Moritz Augsburger <code@moritz.augsburger.name>
     Copyright (c) 2007 Stefan Engelke <mbox@stefanengelke.de>
 
     Permission is hereby granted, free of charge, to any person 
