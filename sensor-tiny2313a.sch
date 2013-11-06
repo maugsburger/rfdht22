@@ -11665,13 +11665,8 @@ DDEController.pdf</description>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="S1" gate="G$1" pin="3"/>
-<wire x1="49.53" y1="46.99" x2="46.99" y2="46.99" width="0.1524" layer="91"/>
-<wire x1="46.99" y1="46.99" x2="41.91" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="49.53" y1="46.99" x2="41.91" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="41.91" y1="46.99" x2="41.91" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="46.99" y1="46.99" x2="46.99" y2="44.45" width="0.1524" layer="91"/>
-<junction x="46.99" y="46.99"/>
-<pinref part="S1" gate="G$1" pin="4"/>
-<wire x1="46.99" y1="44.45" x2="49.53" y2="44.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="44.45" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
