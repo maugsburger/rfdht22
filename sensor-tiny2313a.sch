@@ -11535,6 +11535,8 @@ DDEController.pdf</description>
 <part name="U$1" library="creative-commons" deviceset="CC" device="-TPLACE-HALF" value="CC-TPLACE-HALF"/>
 <part name="U$3" library="creative-commons" deviceset="BY" device="-TPLACE-HS" value="BY-TPLACE-HS"/>
 <part name="U$4" library="creative-commons" deviceset="SA" device="-TPLACE-HALF" value="SA-TPLACE-HALF"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11620,6 +11622,8 @@ DDEController.pdf</description>
 <instance part="U$1" gate="G$1" x="217.17" y="20.32"/>
 <instance part="U$3" gate="G$1" x="222.25" y="20.32"/>
 <instance part="U$4" gate="G$1" x="227.33" y="20.32"/>
+<instance part="R15" gate="G$1" x="134.62" y="43.18" rot="R270"/>
+<instance part="GND9" gate="1" x="134.62" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -11712,6 +11716,10 @@ DDEController.pdf</description>
 <wire x1="123.19" y1="72.39" x2="120.65" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="120.65" y1="72.39" x2="120.65" y2="69.85" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-4" pin="S"/>
+</segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -12020,8 +12028,11 @@ DDEController.pdf</description>
 <net name="PWRON" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="EN"/>
-<wire x1="157.48" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
-<label x="139.7" y="48.26" size="1.778" layer="95"/>
+<wire x1="157.48" y1="48.26" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
+<label x="129.54" y="48.26" size="1.778" layer="95"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<junction x="134.62" y="48.26"/>
 </segment>
 <segment>
 <wire x1="69.85" y1="106.68" x2="62.23" y2="106.68" width="0.1524" layer="91"/>

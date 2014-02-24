@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1575,6 +1575,8 @@ chip</description>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="0.2" y1="0.356" x2="-0.2" y2="0.356" width="0.1524" layer="21"/>
+<wire x1="-0.2" y1="-0.356" x2="0.2" y2="-0.356" width="0.1524" layer="21"/>
 </package>
 <package name="R0805">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -2906,15 +2908,17 @@ chip</description>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<wire x1="0.2" y1="0.356" x2="-0.2" y2="0.356" width="0.1524" layer="21"/>
+<wire x1="-0.2" y1="-0.356" x2="0.2" y2="-0.356" width="0.1524" layer="21"/>
 </package>
 <package name="C0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -2932,6 +2936,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-0.2" y1="0.66" x2="0.2" y2="0.66" width="0.1016" layer="21"/>
+<wire x1="-0.2" y1="-0.66" x2="0.2" y2="-0.66" width="0.1016" layer="21"/>
 </package>
 <package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -9053,6 +9059,10 @@ www.irf.com / irlml5203.pdf</description>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<wire x1="-1.4224" y1="-0.2" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.7" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.2" width="0.1524" layer="21"/>
+<wire x1="0.7" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9588,13 +9598,15 @@ Based on the following sources:
 <description>SMD CHIP &lt;B&gt;INDUCTOR&lt;/B&gt;&lt;p&gt;
 3 x 2.8 x 2.2 mm</description>
 <wire x1="-1.4" y1="-1.3" x2="-1.4" y2="1.3" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="1.3" x2="1.4" y2="1.3" width="0.2032" layer="51"/>
 <wire x1="1.4" y1="1.3" x2="1.4" y2="-1.3" width="0.2032" layer="51"/>
 <wire x1="1.4" y1="-1.3" x2="-1.4" y2="-1.3" width="0.2032" layer="51"/>
-<smd name="1" x="-1.15" y="0" dx="1" dy="2.54" layer="1"/>
-<smd name="2" x="1.15" y="0" dx="1" dy="2.54" layer="1"/>
+<smd name="1" x="-1.25" y="0" dx="1.2" dy="2.54" layer="1"/>
+<smd name="2" x="1.25" y="0" dx="1.2" dy="2.54" layer="1"/>
 <text x="-1.581" y="1.497" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.581" y="-2.751" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.4" y1="1.3" x2="1.4" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="-0.5" y1="1.3" x2="0.5" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="-1.3" x2="-0.5" y2="-1.3" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -10362,6 +10374,8 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="X6" library="pinhead-mod" deviceset="PINHD-1X4" device="_2.54" value="PDI"/>
 <part name="Q1" library="mosfet" deviceset="IRLML2502" device=""/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10481,6 +10495,8 @@ VCC 1.8V max. H 2.1V</text>
 <instance part="R6" gate="G$1" x="223.52" y="152.4" rot="R180"/>
 <instance part="X6" gate="A" x="63.5" y="36.83"/>
 <instance part="Q1" gate="G$1" x="208.28" y="116.84"/>
+<instance part="R7" gate="G$1" x="86.36" y="12.7" rot="R270"/>
+<instance part="GND7" gate="1" x="86.36" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -10598,6 +10614,10 @@ VCC 1.8V max. H 2.1V</text>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11213,8 +11233,11 @@ VCC 1.8V max. H 2.1V</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="EN"/>
-<wire x1="106.68" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="17.78" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
 <label x="88.9" y="17.78" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
+<junction x="86.36" y="17.78"/>
 </segment>
 </net>
 <net name="RFIRQ" class="0">
