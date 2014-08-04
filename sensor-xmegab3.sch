@@ -10368,7 +10368,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="X3" library="con-amp-micromatch" deviceset="MICROMATCH-4" device="" value="I2C"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="X5" library="con-usb" deviceset="USB" device="-MB-S"/>
+<part name="X5" library="con-usb" deviceset="USB" device="-MB-S" value="USB"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="15k"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
@@ -10809,81 +10809,9 @@ VCC 1.8V max. H 2.1V</text>
 </net>
 <net name="SEG0" class="0">
 <segment>
-<pinref part="DISP1" gate="G$1" pin="SEG1"/>
-<wire x1="184.15" y1="25.4" x2="184.15" y2="34.29" width="0.1524" layer="91"/>
-<label x="184.15" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="111.76" y1="92.71" x2="101.6" y2="92.71" width="0.1524" layer="91"/>
-<label x="104.14" y="92.71" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="SEG1(BLINK)"/>
-</segment>
-</net>
-<net name="SEG1" class="0">
-<segment>
-<pinref part="DISP1" gate="G$1" pin="SEG2"/>
-<wire x1="189.23" y1="25.4" x2="189.23" y2="34.29" width="0.1524" layer="91"/>
-<label x="189.23" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="111.76" y1="95.25" x2="101.6" y2="95.25" width="0.1524" layer="91"/>
-<label x="104.14" y="95.25" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="SEG2"/>
-</segment>
-</net>
-<net name="SEG2" class="0">
-<segment>
-<pinref part="DISP1" gate="G$1" pin="SEG3"/>
-<wire x1="194.31" y1="34.29" x2="194.31" y2="25.4" width="0.1524" layer="91"/>
-<label x="194.31" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="111.76" y1="97.79" x2="101.6" y2="97.79" width="0.1524" layer="91"/>
-<label x="104.14" y="97.79" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="SEG3"/>
-</segment>
-</net>
-<net name="SEG3" class="0">
-<segment>
-<pinref part="DISP1" gate="G$1" pin="SEG4"/>
 <wire x1="199.39" y1="25.4" x2="199.39" y2="34.29" width="0.1524" layer="91"/>
 <label x="199.39" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="111.76" y1="100.33" x2="101.6" y2="100.33" width="0.1524" layer="91"/>
-<label x="104.14" y="100.33" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="SEG4"/>
-</segment>
-</net>
-<net name="SEG4" class="0">
-<segment>
-<pinref part="DISP1" gate="G$1" pin="SEG5"/>
-<wire x1="204.47" y1="25.4" x2="204.47" y2="34.29" width="0.1524" layer="91"/>
-<label x="204.47" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="102.87" x2="111.76" y2="102.87" width="0.1524" layer="91"/>
-<label x="104.14" y="102.87" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="SEG5"/>
-</segment>
-</net>
-<net name="SEG5" class="0">
-<segment>
-<pinref part="DISP1" gate="G$1" pin="SEG6"/>
-<wire x1="209.55" y1="25.4" x2="209.55" y2="34.29" width="0.1524" layer="91"/>
-<label x="209.55" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="105.41" x2="111.76" y2="105.41" width="0.1524" layer="91"/>
-<label x="104.14" y="105.41" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="SEG6"/>
-</segment>
-</net>
-<net name="SEG6" class="0">
-<segment>
-<pinref part="DISP1" gate="G$1" pin="SEG7"/>
-<wire x1="214.63" y1="25.4" x2="214.63" y2="34.29" width="0.1524" layer="91"/>
-<label x="214.63" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG4"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="90.17" x2="111.76" y2="90.17" width="0.1524" layer="91"/>
@@ -10891,11 +10819,83 @@ VCC 1.8V max. H 2.1V</text>
 <pinref part="UC1" gate="G$1" pin="SEG0(BLINK)"/>
 </segment>
 </net>
+<net name="SEG1" class="0">
+<segment>
+<wire x1="209.55" y1="25.4" x2="209.55" y2="34.29" width="0.1524" layer="91"/>
+<label x="209.55" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG6"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="92.71" x2="101.6" y2="92.71" width="0.1524" layer="91"/>
+<label x="104.14" y="92.71" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="SEG1(BLINK)"/>
+</segment>
+</net>
+<net name="SEG2" class="0">
+<segment>
+<wire x1="184.15" y1="25.4" x2="184.15" y2="34.29" width="0.1524" layer="91"/>
+<label x="184.15" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG1"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="95.25" x2="101.6" y2="95.25" width="0.1524" layer="91"/>
+<label x="104.14" y="95.25" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="SEG2"/>
+</segment>
+</net>
+<net name="SEG3" class="0">
+<segment>
+<wire x1="189.23" y1="25.4" x2="189.23" y2="34.29" width="0.1524" layer="91"/>
+<label x="189.23" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG2"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="97.79" x2="101.6" y2="97.79" width="0.1524" layer="91"/>
+<label x="104.14" y="97.79" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="SEG3"/>
+</segment>
+</net>
+<net name="SEG4" class="0">
+<segment>
+<label x="194.31" y="25.4" size="1.778" layer="95" rot="R90"/>
+<wire x1="194.31" y1="34.29" x2="194.31" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="DISP1" gate="G$1" pin="SEG3"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="100.33" x2="101.6" y2="100.33" width="0.1524" layer="91"/>
+<label x="104.14" y="100.33" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="SEG4"/>
+</segment>
+</net>
+<net name="SEG5" class="0">
+<segment>
+<wire x1="204.47" y1="25.4" x2="204.47" y2="34.29" width="0.1524" layer="91"/>
+<label x="204.47" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG5"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="102.87" x2="111.76" y2="102.87" width="0.1524" layer="91"/>
+<label x="104.14" y="102.87" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="SEG5"/>
+</segment>
+</net>
+<net name="SEG6" class="0">
+<segment>
+<wire x1="214.63" y1="25.4" x2="214.63" y2="34.29" width="0.1524" layer="91"/>
+<label x="214.63" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG7"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="105.41" x2="111.76" y2="105.41" width="0.1524" layer="91"/>
+<label x="104.14" y="105.41" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="SEG6"/>
+</segment>
+</net>
 <net name="SEG7" class="0">
 <segment>
-<pinref part="DISP1" gate="G$1" pin="SEG8"/>
 <wire x1="219.71" y1="25.4" x2="219.71" y2="34.29" width="0.1524" layer="91"/>
 <label x="219.71" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG8"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="107.95" x2="111.76" y2="107.95" width="0.1524" layer="91"/>
@@ -10905,9 +10905,9 @@ VCC 1.8V max. H 2.1V</text>
 </net>
 <net name="SEG8" class="0">
 <segment>
-<pinref part="DISP1" gate="G$1" pin="SEG9"/>
 <wire x1="224.79" y1="25.4" x2="224.79" y2="34.29" width="0.1524" layer="91"/>
 <label x="224.79" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="DISP1" gate="G$1" pin="SEG9"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="110.49" x2="111.76" y2="110.49" width="0.1524" layer="91"/>
@@ -11495,8 +11495,9 @@ VCC 1.8V max. H 2.1V</text>
 <approved hash="202,1,166.37,46.99,DISP1,COM1A,,,,"/>
 <approved hash="104,1,106.68,22.86,U1,VIN,VBAT,,,"/>
 <approved hash="104,1,33.02,72.39,UC1,AGND,GND,,,"/>
+<approved hash="106,1,101.6,128.27,SEG14,,,,,"/>
+<approved hash="106,1,101.6,130.81,SEG15,,,,,"/>
 <approved hash="115,1,130.071,89.431,FRAME2,,,,,"/>
-<approved hash="115,1,241.745,154.356,X5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
