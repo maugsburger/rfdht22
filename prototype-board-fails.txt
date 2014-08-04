@@ -1,0 +1,5 @@
+seg0/seg1 must be rewired
+
+seg14/15 can't be used -> rerouted
+    p26 pwron -> p25 pm0
+    p25 sp1won -> p24 pg7
